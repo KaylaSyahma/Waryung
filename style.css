@@ -10,9 +10,11 @@
     overflow: hidden;
 }
 
-:root{
-    --tulisan-ijo: #00880C;
-}
+:root {
+    --yellow-text-color: #ffce1f;
+    --green-text-color: #00880c;
+    --black-text-color: #000;
+  }
 
 #makan{
     height: 100vh;
@@ -23,6 +25,79 @@ h2{
     font-size: 21px;
 }
 
+/* Second Section */
+
+.driver-bg {
+    margin-top: 40px;
+    margin-left: -70px;
+  }
+  
+  .driver-only {
+    margin-top: 140px;
+    margin-left: -70px;
+    animation-name: move;
+    animation-duration: 2s; /* Animation lasts 5 seconds */
+    animation-iteration-count: infinite;  /* Animation repeats forever */
+  }
+  
+  @keyframes move {
+    from { transform: translateX(0px); }  /* motorbike starts at position 0 */
+    to { transform: translateX(200px); }  /* motorbike moves 200px to the right */
+  }
+  
+  .layer {
+    width: 130%;
+    height: 100%;
+  }
+  
+  .content {
+    margin-top: 117px;
+  }
+  
+  .text h2 {
+    color: var(--black-text-color);
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    width: 508px;
+  }
+  
+  .text p {
+    color: var(--green-text-color);
+    font-size: 25px;
+    font-weight: 600;
+    width: 450px;
+  }
+  
+  .point {
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  
+  .point img {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-right: 10px;
+    margin-top: 3px;
+  
+  }
+  
+  .point p {
+    color: var(--black-text-color);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .btn-pesan {
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 10px;
+  }
+  
 
 
 
