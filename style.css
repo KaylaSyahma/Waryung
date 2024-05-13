@@ -1,27 +1,153 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-*, 
+*,
 *::before,
-*::after{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Poppins",sans-serif;
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 :root {
-    --yellow-text-color: #ffce1f;
-    --green-text-color: #00880c;
-    --black-text-color: #000;
-  }
-
-#makan{
-    height: 100vh;
+  --tulisan-ijo: #00880c;
+  --text-color: #000;
+  --p-color: #b3b4bb;
+  --text-kuning: #FFCE1F;
+  --yellow-text-color: #ffce1f;
+  --green-text-color: #00880c;
+  --black-text-color: #000;
 }
 
-h2{
-    color: var(--tulisan-ijo);
-    font-size: 21px;
+#makan {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.judul {
+    margin-bottom: 70px;
+}
+
+.food-img img{
+    width: 100px;
+}
+
+.h1 {
+  color: var(--text-color);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.h2 {
+  color: var(--tulisan-ijo);
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 27px;
+}  
+
+span{
+  color: var(--text-kuning);
+}
+
+.desc h3 {
+  color: var(--text-color);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.desc p {
+  color: var(--p-color);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.card-makanan {
+  border-radius: 9px;
+  border: 1px solid #dcdbdb;
+  background: #fff;
+  gap: 25px;
+  transition: 0.3s ease;
+  width: 359.115px;
+  padding-top: 20px;
+  padding-left: 25px;
+}
+
+.card-makanan:hover {
+  border: 1px solid #ffbe1e;
+}
+
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.marqueeOne {
+    display: flex;
+    animation: marqueeScrollOne 20s linear infinite reverse;
+    cursor: pointer;
+}
+
+.marqueeTwo {
+    display: flex;
+    animation: marqueeScrollOne 20s linear infinite;
+    cursor: pointer;
+}
+
+
+/* SECTION JAJANAN */
+.jajanan {
+  height: 100vh;
+}
+.jajanan .h1{
+  font-weight: 700;
+  font-size: 35px;
+  width: 400px;
+}
+.jajanan h2 {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.jajanan-card{
+  gap: 47px;
+}
+.card-jajanan{
+  width: 280px;
+  border-radius: 20px;
+border: 1px solid #DCDBDB;
+}
+.card-jajanan-img{
+  width: 280px;
+}
+
+.card-jajanan h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-jajanan p {
+  color: var(--p-color);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.card-jajanan .ijo{
+  color: var(--tulisan-ijo);
+  font-size: 14px;
+}
+
+.card-jajanan .bintang{
+  font-size: 13px;
 }
 
 /* NAVBAR */
@@ -239,8 +365,23 @@ h2{
 /* CUSTOMER SECTION END */
 
 
+/* .marquee img {
+    margin-right: 20px; /* Adjust as needed */
 
 
-
-
-
+@keyframes marqueeScrollOne {
+    0% {
+        transform: translateX(90%);
+    }
+    100% {
+        transform: translateX(-90%);
+    }
+}
+@keyframes marqueeScrollTwo {
+    0% {
+        transform: translateX(90%);
+    }
+    100% {
+        transform: translateX(-90%);
+    }
+}
