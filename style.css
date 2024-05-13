@@ -114,14 +114,129 @@ h2{
   line-height: normal;
 }
 
-.btn-pesan {
+.button {
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 10px;
+}
+/* SECOND SECTION END */
+
+/* CUSTOMER SECTION */
+.customer {
+  background-color: #fff5c3;
+  font-family: poppins;
+}
+
+.text {
+  margin-left: 60px;
+  margin-top: 180px;
+}
+
+.text p {
+  color: var(--green-text-color);
+  font-size: 21px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.text h2 {
+  color: var(--black-text-color);
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: capitalize;
+  width: 499px;
+}
+
+.text span {
+  color: var(--grey-text-color);
+  font-size: 14px;
+  font-weight: 500;
+  white-space: pre-line;
+}
+
+.button {
   font-size: 14px;
   font-weight: 400;
   border-radius: 10px;
 }
 
-/* SECOND SECTION END */
+.up {
+  animation: up 10s infinite ease-out;
+  width: 350px;
+  height: 210px;
+  border-radius: 18px;
+  background: #fff;
+}
 
+.down {
+  animation: down 10s infinite ease-out;
+  width: 350px;
+  height: 210px;
+  border-radius: 18px;
+  background: #fff;
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.card-body {
+  padding: 20px 30px 20px 30px;
+}
+
+.card-body h5 {
+  color: var(--black-text-color);
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.card-body p {
+  color: #484b5c;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.name {
+  margin-left: 15px;
+  margin-top: 2px;
+}
+
+.name h6 {
+  color: var(--green-text-color);
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.name p {
+  color: var(--grey-text-color);
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: -9px;
+}
+
+/* CUSTOMER SECTION END */
 
 
 
