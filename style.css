@@ -24,6 +24,31 @@ h2{
     font-size: 21px;
 }
 
+/* NAVBAR */
+.navbar{
+    background-color: white;
+}
+.navbar .navbar-logo {
+    font-weight: 600;
+}
+.button {
+    background: #FFCE1F;
+}
+
+/* HOME */
+#home{
+    background-image: url(assets/home-bg.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.card {
+    width: 30rem;
+    box-shadow: 0px 12px 8px rgba(0, 0, 0, 0.1);
+    left: 50%;
+    transform: translateX(-100%);
+}
+
+
 
 
 
