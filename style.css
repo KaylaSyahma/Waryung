@@ -3,11 +3,7 @@
 *,
 *::before,
 *::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
 }
 
 :root {
@@ -18,6 +14,8 @@
   --yellow-text-color: #ffce1f;
   --green-text-color: #00880c;
   --black-text-color: #000;
+  --grey-text-color: #B3B4BB;
+
 }
 
 #makan {
@@ -185,7 +183,8 @@ border: 1px solid #DCDBDB;
   margin-left: -70px;
   animation-name: move;
   animation-duration: 2s; /* Animation lasts 5 seconds */
-  animation-iteration-count: infinite;  /* Animation repeats forever */
+  animation-iteration-count: 1;  /* Animation repeats  */
+  animation-fill-mode: forwards;
 }
 
 @keyframes move {
@@ -202,7 +201,7 @@ border: 1px solid #DCDBDB;
   margin-top: 117px;
 }
 
-.text h2 {
+.text-waryung h2 {
   color: var(--black-text-color);
   font-size: 38px;
   font-style: normal;
@@ -212,7 +211,7 @@ border: 1px solid #DCDBDB;
   width: 508px;
 }
 
-.text p {
+.text-waryung p {
   color: var(--green-text-color);
   font-size: 25px;
   font-weight: 600;
@@ -240,14 +239,129 @@ border: 1px solid #DCDBDB;
   line-height: normal;
 }
 
-.btn-pesan {
+.button {
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 10px;
+}
+/* SECOND SECTION END */
+
+/* CUSTOMER SECTION */
+.customer {
+  background-color: #fff5c3;
+  font-family: poppins;
+}
+
+.text {
+  margin-left: 90px;
+  margin-top: 50px;
+}
+
+.text p {
+  color: var(--green-text-color);
+  font-size: 21px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.text h2 {
+  color: var(--black-text-color);
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: capitalize;
+  width: 499px;
+}
+
+.text span {
+  color: var(--grey-text-color);
+  font-size: 14px;
+  font-weight: 500;
+  white-space: pre-line;
+}
+
+.button {
   font-size: 14px;
   font-weight: 400;
   border-radius: 10px;
 }
 
-/* SECOND SECTION END */
+.up {
+  animation: up 10s infinite ease-out;
+  width: 350px;
+  height: 210px;
+  border-radius: 18px;
+  background: #fff;
+}
 
+.down {
+  animation: down 10s infinite ease-out;
+  width: 350px;
+  height: 210px;
+  border-radius: 18px;
+  background: #fff;
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(60px);
+  }
+  50% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(60px);
+  }
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(-60px);
+  }
+  50% {
+    transform: translateY(60px);
+  }
+  100% {
+    transform: translateY(-70px);
+  }
+}
+
+.card-body {
+  padding: 20px 30px 20px 30px;
+}
+
+.card-body h5 {
+  color: var(--black-text-color);
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.card-body p {
+  color: #484b5c;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.name {
+  margin-left: 15px;
+  margin-top: 2px;
+}
+
+.name h6 {
+  color: var(--green-text-color);
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.name p {
+  color: var(--grey-text-color);
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: -9px;
+}
+
+/* CUSTOMER SECTION END */
 
 
 /* .marquee img {
