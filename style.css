@@ -22,6 +22,7 @@
   height: 100vh;
   justify-content: center;
   align-items: center;
+  padding-top: 100px;
 }
 
 .judul {
@@ -74,12 +75,16 @@ span{
   gap: 25px;
   transition: 0.3s ease;
   width: 359.115px;
-  padding-top: 20px;
-  padding-left: 25px;
+  padding: 30px;
+  justify-content: center;
 }
 
 .card-makanan:hover {
   border: 1px solid #ffbe1e;
+}
+
+.pengecualian {
+  justify-content: center;
 }
 
 
@@ -91,14 +96,17 @@ span{
 
 .marqueeOne {
     display: flex;
-    animation: marqueeScrollOne 20s linear infinite reverse;
+    animation: marqueeScrollOne 25s linear infinite reverse;
     cursor: pointer;
+    margin-bottom: 5rem;
+    gap: 2rem;
 }
 
 .marqueeTwo {
     display: flex;
-    animation: marqueeScrollOne 20s linear infinite;
+    animation: marqueeScrollOne 25s linear infinite;
     cursor: pointer;
+    gap: 2rem;
 }
 
 
@@ -151,6 +159,7 @@ border: 1px solid #DCDBDB;
 /* NAVBAR */
 .navbar{
     background-color: white;
+    z-index: 100;
 }
 .navbar .navbar-logo {
     font-weight: 600;
@@ -161,15 +170,36 @@ border: 1px solid #DCDBDB;
 
 /* HOME */
 #home{
-    background-image: url(assets/home-bg.jpg);
+    background-image: url(assets/home-section/Desktop\ -\ 7-2.jpg);
     height: 100vh;
     background-repeat: no-repeat;
+}
+.home-text{
+  margin-bottom: 7rem;
+}
+.home-text h2{
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 35px;
+}
+.home-text p{
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 500;
 }
 .card {
     width: 30rem;
     box-shadow: 0px 12px 8px rgba(0, 0, 0, 0.1);
     left: 50%;
     transform: translateX(-100%);
+}
+
+.card-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20%;
+  z-index: 5;
 }
 
 /* SECOND SECTION */

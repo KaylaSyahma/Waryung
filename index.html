@@ -6,10 +6,13 @@
     <title>Document</title>
 
     <!-- LINK CSS BOOTSTRAP -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- LINK CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+
     <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,13 +25,11 @@
     <header>
       <!-- NAVBAR -->
       <nav
-        class="navbar navbar-expand-lg navbar-dark nav-color position-fixed w-100"
-      >
+        class="navbar navbar-expand-lg navbar-dark nav-color position-fixed w-100">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="assets/waryung-logo.svg" alt="waryung-logo" width="150" />
+            <img src="assets/home-section/waryung-logo.svg" alt="waryung-logo" width="150" />
           </a>
-
           <button
             class="navbar-toggler"
             type="button"
@@ -36,19 +37,16 @@
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav nav-underline mx-auto">
               <li class="nav-item">
-                <a
-                  class="nav-link active text-black"
+                <a class="nav-link active text-black"
                   aria-current="page"
-                  href="#"
-                  >Beranda
+                  href="#">Beranda
                 </a>
               </li>
               <li class="nav-item mx-2">
@@ -70,49 +68,36 @@
       <div class="container h-100">
         <div class="row w-100 h-100 justify-content-center">
           <div class="col-md-6 my-auto">
-            <div
-              class="card position-absolute"
-              style="width: 30rem; left: 50%; transform: translateX(-50%)"
-            >
-              <div class="card-body p-4">
-                <h5 class="card-title mb-4">Tulis alamatmu</h5>
 
-                <div class="input-alamat input-group mb-3">
-                  <input
-                    class="form-control"
-                    type="text"
-                    placeholder="Misalnya, Jalan Raya Dayeuh Jonggol"
-                    aria-label="default input example"
-                  />
-                  <button type="button" class="btn btn-warning text-white">
-                    Cari
-                  </button>
-                </div>
-                <div class="input-alamat input-group mb-3">
-                  <a
-                    href=""
-                    class="form-control text-decoration-none text-warning"
-                  >
-                    <img
-                      src="assets/location.svg"
-                      style="
-                        margin-right: 12px;
-                        width: 15px;
-                        margin-bottom: 1px;
-                      "
-                      alt=""
-                    />Atau gunakan lokasi saya saat ini
-                  </a>
-                </div>
+              <div class="home-text text-center">
+                 <h2>Laper? Hayu jajan di Waryung!</h2>
+                 <p>Tinggal klak-klik, bayar, selesai!</p>
               </div>
-            </div>
+
+              <div class="card-wrapper">
+                  <div class="card" style="width: 30rem; left: 50%; transform: translateX(-50%);">
+                      <div class="card-body p-4">
+                        <h5 class="card-title mb-4">Tulis alamatmu</h5>
+  
+                        <div class="input-alamat input-group mb-3">
+                          <input class="form-control" type="text" placeholder="Misalnya, Jalan Raya Dayeuh Jonggol" aria-label="default input example"/> 
+                          <button type="button" class="btn btn-warning text-white">Cari</button>
+                        </div>
+                        <div class="input-alamat input-group mb-3">
+                          <a href="" class="form-control text-decoration-none text-warning">
+                          <img src="assets/home-section/location.svg" style="margin-right: 12px; width: 15px; margin-bottom: 1px;" alt="">Atau gunakan lokasi saya saat ini
+                          </a>
+                        </div>
+                      </div>
+                  </div>
+              </div>
           </div>
         </div>
       </div>
-    </section>
+  </section>
 
     <!-- SECOND SECTION -->
-    <section class="container">
+    <section class="container font">
       <div class="row mt-5">
         <div class="col-md-6">
           <div class="">
@@ -131,7 +116,7 @@
 
         <div class="col-md-4">
           <div class="content position-relative">
-            <div class="text-waryung">
+            <div class="text">
               <p>Solusi buat kamu yang mageran</p>
               <h2>
                 Mau jajan jadi gampang karna ada
@@ -162,7 +147,7 @@
             </div>
           </div>
 
-          <a href="" class="button btn btn-warning text-white mt-4"
+          <a href="" class="btn btn-warning text-white mt-4 btn-pesan"
             >Pesan sekarang</a
           >
         </div>
@@ -186,7 +171,8 @@
               <div class="text">
                 <p>Suara Pengguna Waryung</p>
                 <h2>
-                  Belanja Jajanan Tanpa Ribet, Langsung ke Pintu Anda!
+                  Memudahkan Semua Kalangan, dari Siswi SMA Hingga Ibu Rumah
+                  Tangga!
                 </h2>
                 <span>
                   Terbukti! Waryung memudahkan semua kalangan, dari siswi SMA hingga ibu rumah tangga. Temukan kenyamanan berbelanja jajanan favorit tanpa repot!
@@ -202,7 +188,7 @@
             </div>
           </div>
   
-          <div class="col-md-3">
+          <div class="col-md-3 ">
             <div class="card up">
               <div class="card-body">
                 <h5>Solusi yang kreatif</h5>
@@ -257,7 +243,7 @@
             </div>
           </div>
   
-          <div class="col-md-3">
+          <div class="col-md-3 ">
             <div class="card down mb-4">
               <div class="card-body">
                 <h5>Hemat Waktu!</h5>
@@ -313,9 +299,8 @@
         </div>
       </section>
     <!-- CUSTOMER SECTION END -->
-
     <section id="makan">
-      <div class=" h-100">
+      <div class="h-100">
         <div class="row col-12 text-center judul">
           <h2 class="h2">Mau Makan apa hari ini?</h2>
           <h1 class="h1">Cari Makanan Yang Kamu Pengen!</h1>
@@ -335,7 +320,7 @@
             
                     <div class="card-makanan d-flex col-4">
                         <div class="food-img">
-                            <img src="assets/card-section/siomay.svg" alt="">
+                            <img src="assets/card-section/Soto.svg" alt="">
                         </div>
                         <div class="desc">
                             <h3>Siomay</h3>
@@ -426,69 +411,10 @@
                             <p>Siomay mang Maman</p>
                         </div>
                     </div>
-            
-
                 </div>
             </div>
         </div>
     </section>
-    <!-- THIRD SECTION END -->
-
-    <!-- JAJANAN TERDEKAT SECTION -->
-    <section class="container jajanan">
-        <h2 class="h2">Ga usah bingung mau jajan apa</h2>
-        <h1 class="h1">Pilih <span>jajanan</span> terdekat <span>yang kamu mau</span></h1>
-
-        <div class="mt-5 d-flex jajanan-card">
-            <div class="card-jajanan">
-                <img src="assets/card-section/siomay pak dodod.png" alt="" class="card-jajanan-img">
-                <div class="p-2">
-                    <h3 class="mt-3">Siomay Pak Dodod</h3>
-                    <p class="mb-5">Rp.5,000 - 10,000</p>
-                    <div class=" d-flex justify-content-between">
-                        <p class="bintang"><img src="assets/card-section/bintang4.svg" alt="" style="width: 5rem; margin-right: 5px;">(105)</p>
-                        <p class="ijo"><img src="assets/card-section/loc-ijo.svg" alt="" style="width: 1.2rem; display: inline-block;">0,1 Km</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-jajanan">
-                <img src="assets/card-section/siomay pak dodod.png" alt="" class="card-jajanan-img">
-                <div class="p-2">
-                    <h3 class="mt-3">Siomay Pak Dodod</h3>
-                    <p class="mb-5">Rp.5,000 - 10,000</p>
-                    <div class=" d-flex justify-content-between">
-                        <p class="bintang"><img src="assets/card-section/bintang4.svg" alt="" style="width: 5rem; margin-right: 5px;">(105)</p>
-                        <p class="ijo"><img src="assets/card-section/loc-ijo.svg" alt="" style="width: 1.2rem; display: inline-block;">0,1 Km</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-jajanan">
-                <img src="assets/card-section/siomay pak dodod.png" alt="" class="card-jajanan-img">
-                <div class="p-2">
-                    <h3 class="mt-3">Siomay Pak Dodod</h3>
-                    <p class="mb-5">Rp.5,000 - 10,000</p>
-                    <div class=" d-flex justify-content-between">
-                        <p class="bintang"><img src="assets/card-section/bintang4.svg" alt="" style="width: 5rem; margin-right: 5px;">(105)</p>
-                        <p class="ijo"><img src="assets/card-section/loc-ijo.svg" alt="" style="width: 1.2rem; display: inline-block;">0,1 Km</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card-jajanan">
-                <img src="assets/card-section/siomay pak dodod.png" alt="" class="card-jajanan-img">
-                <div class="p-2">
-                    <h3 class="mt-3">Siomay Pak Dodod</h3>
-                    <p class="mb-5">Rp.5,000 - 10,000</p>
-                    <div class=" d-flex justify-content-between">
-                        <p class="bintang"><img src="assets/card-section/bintang4.svg" alt="" style="width: 5rem; margin-right: 5px;">(105)</p>
-                        <p class="ijo"><img src="assets/card-section/loc-ijo.svg" alt="" style="width: 1.2rem; display: inline-block;">0,1 Km</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-      
 
     <!-- SCRIPT BOOTSTRAP -->
     <script
