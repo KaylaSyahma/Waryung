@@ -159,6 +159,7 @@ border: 1px solid #DCDBDB;
 /* NAVBAR */
 .navbar{
     background-color: white;
+    z-index: 100;
 }
 .navbar .navbar-logo {
     font-weight: 600;
@@ -169,15 +170,36 @@ border: 1px solid #DCDBDB;
 
 /* HOME */
 #home{
-    background-image: url(assets/home-bg.jpg);
+    background-image: url(assets/home/Desktop\ -\ 7-2.jpg);
     height: 100vh;
     background-repeat: no-repeat;
+}
+.home-text{
+  margin-bottom: 7rem;
+}
+.home-text h2{
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 35px;
+}
+.home-text p{
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 500;
 }
 .card {
     width: 30rem;
     box-shadow: 0px 12px 8px rgba(0, 0, 0, 0.1);
     left: 50%;
     transform: translateX(-100%);
+}
+
+.card-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20%;
+  z-index: 5;
 }
 
 /* SECOND SECTION */
