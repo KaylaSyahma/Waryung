@@ -16,32 +16,21 @@
 
 /* NAVBAR */
 .navbar{
-  background-color: white;
-  z-index: 100;
+    background-color: white;
+    z-index: 100;
 }
 .navbar .navbar-logo {
-  font-weight: 600;
+    font-weight: 600;
 }
 .button {
-  background: #FFCE1F;
+    background: #FFCE1F;
 }
-/* NAVBAR END */
 
-/* HOME */
-#home{
-  background-image: url(assets/home-section/home-bg.jpg);
-  height: 90vh;
-  background-repeat: no-repeat;
-}
 /* HOME */
 #home{
     background-image: url(assets/home-section/home-bg.jpg);
     height: 100vh;
     background-repeat: no-repeat;
-}
-
-.home-text{
-  margin-bottom: 7rem;
 }
 .home-text h2{
   color: var(--text-color);
@@ -67,7 +56,6 @@
   bottom: 20%;
   z-index: 5;
 }
-/* HOME END */
 
 /* SECOND SECTION */
 .driver-bg {
