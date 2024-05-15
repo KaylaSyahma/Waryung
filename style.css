@@ -296,6 +296,10 @@ span{
   gap: 60px; /* Adjust gap between cards if needed */
 }
 
+.desc-jajanan{
+  padding: 3px 22px;
+}
+
 /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
 .jajanan-card::-webkit-scrollbar {
     display: none;
