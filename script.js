@@ -43,3 +43,4 @@ function handleScroll() {
 
 // Panggil handleScroll saat terjadi peristiwa scroll
 window.addEventListener('scroll', handleScroll);
+

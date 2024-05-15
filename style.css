@@ -170,7 +170,7 @@ border: 1px solid #DCDBDB;
 
 /* HOME */
 #home{
-    background-image: url(assets/home-section/Desktop\ -\ 7-2.jpg);
+    background-image: url(assets/home-section/home.svg);
     height: 100vh;
     background-repeat: no-repeat;
 }
@@ -414,3 +414,4 @@ border: 1px solid #DCDBDB;
         transform: translateX(-90%);
     }
 }
+
