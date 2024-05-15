@@ -87,34 +87,106 @@ span{
   justify-content: center;
 }
 
-
+/* Marquee */
 .marquee-container {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: nowrap;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 2rem;
+  flex: 0 0 auto;
+}
+
+@keyframes marqueeScrollLeft {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+@keyframes marqueeScrollRight {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(0);
+  }
 }
 
 .marqueeOne {
-    display: flex;
-    animation: marqueeScrollOne 25s linear infinite reverse;
-    cursor: pointer;
-    margin-bottom: 5rem;
-    gap: 2rem;
+  display: flex;
+  animation: marqueeScrollRight 25s linear infinite;
 }
 
 .marqueeTwo {
-    display: flex;
-    animation: marqueeScrollOne 25s linear infinite;
-    cursor: pointer;
-    gap: 2rem;
+  display: flex;
+  animation: marqueeScrollLeft 25s linear infinite;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+
+.rounded-circle{
+  background-color: #ffbe1e;
+}
+
+.rounded-circle:hover{
+  background-color: #FFE485;
+}
+
+.rounded-circle img{
+  color: var(--green-text-color);
 }
 
 
 /* SECTION JAJANAN */
+.rounded-circle {
+  background-color: #ffbe1e;
+}
+
+.rounded-circle:hover {
+  background-color: #ffe485;
+}
+
 .jajanan {
   height: 100vh;
 }
-.jajanan .h1{
+
+.button-group {
+  display: flex;
+  gap: 10px; /* Adjust gap between buttons if needed */
+}
+
+.jajanan-card-wrapper{
+    overflow: hidden; /* Hide scrollbar */
+}
+
+.jajanan-card {
+  display: flex;
+  overflow-x: scroll; /* Allow horizontal scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  gap: 60px; /* Adjust gap between cards if needed */
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.jajanan-card::-webkit-scrollbar {
+    display: none;
+}
+
+.jajanan .h1 {
   font-weight: 700;
   font-size: 35px;
   width: 400px;
@@ -124,15 +196,15 @@ span{
   font-size: 25px;
 }
 
-.jajanan-card{
-  gap: 47px;
-}
-.card-jajanan{
+.card-jajanan {
+  flex-shrink: 0; /* Prevent cards from shrinking */
   width: 280px;
   border-radius: 20px;
-border: 1px solid #DCDBDB;
+  border: 1px solid #dcdbdb;
+  flex-shrink: 0; /* Prevent cards from shrinking */
 }
-.card-jajanan-img{
+
+.card-jajanan-img {
   width: 280px;
 }
 
@@ -147,14 +219,15 @@ border: 1px solid #DCDBDB;
   font-size: 15px;
 }
 
-.card-jajanan .ijo{
+.card-jajanan .ijo {
   color: var(--tulisan-ijo);
   font-size: 14px;
 }
 
-.card-jajanan .bintang{
+.card-jajanan .bintang {
   font-size: 13px;
 }
+
 
 /* NAVBAR */
 .navbar{
@@ -369,26 +442,5 @@ border: 1px solid #DCDBDB;
   margin-top: -9px;
 }
 
-/* CUSTOMER SECTION END */
 
 
-/* .marquee img {
-    margin-right: 20px; /* Adjust as needed */
-
-
-@keyframes marqueeScrollOne {
-    0% {
-        transform: translateX(90%);
-    }
-    100% {
-        transform: translateX(-90%);
-    }
-}
-@keyframes marqueeScrollTwo {
-    0% {
-        transform: translateX(90%);
-    }
-    100% {
-        transform: translateX(-90%);
-    }
-}
