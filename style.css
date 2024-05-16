@@ -10,43 +10,42 @@
   --yellow-text-color: #ffce1f;
   --green-text-color: #00880c;
   --black-text-color: #000;
-  --grey-text-color: #B3B4BB;
-
+  --grey-text-color: #b3b4bb;
 }
 
 /* NAVBAR */
-.navbar{
-    background-color: white;
-    z-index: 100;
+.navbar {
+  background-color: white;
+  z-index: 100;
 }
 .navbar .navbar-logo {
-    font-weight: 600;
+  font-weight: 600;
 }
 .button {
-    background: #FFCE1F;
+  background: #ffce1f;
 }
 
 /* HOME */
-#home{
-    background-image: url(assets/home-section/home-bg.jpg);
-    height: 100vh;
-    background-repeat: no-repeat;
+#home {
+  background-image: url(assets/home-section/home-bg.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
 }
-.home-text h2{
+.home-text h2 {
   color: var(--text-color);
   font-weight: 600;
   font-size: 35px;
 }
-.home-text p{
+.home-text p {
   color: var(--text-color);
   font-size: 18px;
   font-weight: 500;
 }
 .card {
-    width: 30rem;
-    box-shadow: 0px 12px 8px rgba(0, 0, 0, 0.1);
-    left: 50%;
-    transform: translateX(-100%);
+  width: 30rem;
+  box-shadow: 0px 12px 8px rgba(0, 0, 0, 0.1);
+  left: 50%;
+  transform: translateX(-100%);
 }
 
 .card-wrapper {
@@ -68,13 +67,17 @@
   margin-left: -70px;
   animation-name: move;
   animation-duration: 3s; /* Animation lasts 5 seconds */
-  animation-iteration-count: 1;  /* Animation repeats  */
-  animation-fill-mode: forwards; 
+  animation-iteration-count: 1; /* Animation repeats  */
+  animation-fill-mode: forwards;
 }
 
 @keyframes move {
-  from { transform: translateX(0px); }  /* motorbike starts at position 0 */
-  to { transform: translateX(200px); }  /* motorbike moves 200px to the right */
+  from {
+    transform: translateX(0px);
+  } /* motorbike starts at position 0 */
+  to {
+    transform: translateX(200px);
+  } /* motorbike moves 200px to the right */
 }
 
 .layer {
@@ -114,7 +117,6 @@
   flex-shrink: 0;
   margin-right: 10px;
   margin-top: 3px;
-
 }
 
 .point p {
@@ -131,8 +133,6 @@
 }
 /* SECOND SECTION END */
 
-
-
 #makan {
   height: 100vh;
   justify-content: center;
@@ -141,11 +141,11 @@
 }
 
 .judul {
-    margin-bottom: 70px;
+  margin-bottom: 70px;
 }
 
-.food-img img{
-    width: 100px;
+.food-img img {
+  width: 100px;
 }
 
 .h1 {
@@ -161,9 +161,9 @@
   font-size: 21px;
   font-weight: 600;
   margin-bottom: 27px;
-}  
+}
 
-span{
+span {
   color: var(--yellow-text-color);
 }
 
@@ -223,19 +223,19 @@ span{
 
 @keyframes marqueeScrollLeft {
   0% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
   100% {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 
 @keyframes marqueeScrollRight {
   0% {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
   100% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
@@ -253,19 +253,17 @@ span{
   animation-play-state: paused;
 }
 
-
-.rounded-circle{
+.rounded-circle {
   background-color: #ffbe1e;
 }
 
-.rounded-circle:hover{
-  background-color: #FFE485;
+.rounded-circle:hover {
+  background-color: #ffe485;
 }
 
-.rounded-circle img{
+.rounded-circle img {
   color: var(--green-text-color);
 }
-
 
 /* SECTION JAJANAN */
 .rounded-circle {
@@ -285,8 +283,8 @@ span{
   gap: 10px; /* Adjust gap between buttons if needed */
 }
 
-.jajanan-card-wrapper{
-    overflow: hidden; /* Hide scrollbar */
+.jajanan-card-wrapper {
+  overflow: hidden; /* Hide scrollbar */
 }
 
 .jajanan-card {
@@ -298,7 +296,7 @@ span{
 
 /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
 .jajanan-card::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .jajanan .h1 {
@@ -343,19 +341,16 @@ span{
   font-size: 13px;
 }
 
-
 /* NAVBAR */
-.navbar{
-    background-color: white;
+.navbar {
+  background-color: white;
 }
 .navbar .navbar-logo {
-    font-weight: 600;
+  font-weight: 600;
 }
 .button {
-    background: #FFCE1F;
+  background: #ffce1f;
 }
-
-
 
 /* CUSTOMER SECTION */
 .customer {
@@ -472,25 +467,87 @@ span{
   margin-top: -9px;
 }
 
-
-
-
-
 /* MAP */
 
-.map-section{
-    background-image: url(assets/map-section/map-bg.jpg);
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-  }
-  .text-map h4{
-    font-weight: 600;
-    color: black;
-  }
+.map-section {
+  background-image: url(assets/map-section/map-bg.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.text-map h4 {
+  font-weight: 600;
+  color: black;
+}
+
+.map {
+  max-width: 00px;
+  margin: 0 auto;
+}
+
+/* RESPONSIF */
+
+@media screen and (max-width: 922px) {
   
-  .map{
-    max-width: 00px;
-    margin: 0 auto;
+  /* SECOND SECTION */
+  #second-section {
+    margin-bottom: 90px;
   }
+  .driver-bg {
+    margin-top: 40px;
+    margin-left: -70px;
+    width: 300% !important;
+    height: 300% !important;
+  }
+
+  .driver-only {
+    margin-top: 40px;
+    margin-left: -40px;
+    animation-name: move;
+    animation-duration: 5s; /* Animation lasts 5 seconds */
+    width: 40%;
+    height: 40%;
+  }
+
+  @keyframes move {
+    from {
+      transform: translateX(0px);
+    } /* motorbike starts at position 0 */
+    to {
+      transform: translateX(90px);
+    } /* motorbike moves 200px to the right */
+  }
+
+  .layer {
+    display: none;
+  }
+
+  .content {
+    margin-top: 17px;
+  }
+
+  .text-waryung h2 {
+    font-size: 30px;
+    width: 408px;
+  }
+
+  .text-waryung p {
+    font-size: 17px;
+  }
+
+  .point {
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+
+  .point p {
+    font-size: 14px;
+    display: inline;
+  }
+
+  .btn-pesan {
+    font-size: 14px;
+    border-radius: 10px;
+  }
+  /* SECOND SECTION END */
+}
