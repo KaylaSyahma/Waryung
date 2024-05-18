@@ -489,6 +489,77 @@ span {
 }
 
 /* RESPONSIF */
+@media screen and (max-width: 1200px) {
+  #second-section {
+    margin-bottom: 150px;
+  }
+
+  .driver-only {
+    margin-top: 170px;
+    margin-left: -100px;
+    animation-name: move;
+    animation-duration: 5s; /* Animation lasts 5 seconds */
+    width: 40%;
+    height: 40%;
+  }
+
+  @keyframes move {
+    from {
+      transform: translateX(0px);
+    } /* motorbike starts at position 0 */
+    to {
+      transform: translateX(130px);
+    } /* motorbike moves 200px to the right */
+  }
+
+   /* CUSTOMER SECTION */
+.text-customer {
+  margin-left: 90px;
+  margin-top: 50px;
+}
+
+.text-customer p {
+  font-size: 21px;
+}
+
+.text-customer h2 {
+  font-size: 23px;
+  width: 370px;
+}
+
+.text-customer h6 {
+  font-size: 15px;
+  width: 440px;
+}
+
+.card-up {
+  margin-left: -200px;
+  margin-right: 20px;
+}
+
+.up {
+  width: 300px;
+  height: 190px;
+}
+
+.down {
+  width: 300px;
+  height: 190px;
+}
+
+.card-body h5 {
+  font-size: 15px;
+}
+
+.card-body p {
+  font-size: 11px;
+}
+
+.name-div {
+  margin-top: -9px;
+}
+/* CUSTOMER SECTION END */
+}
 
 @media screen and (max-width: 922px) {
   /* SECOND SECTION */
@@ -555,11 +626,6 @@ span {
   /* SECOND SECTION END */
 
   /* CUSTOMER SECTION */
-.customer {
-  background-color: #fff5c3;
-  font-family: poppins;
-}
-
 .text-customer {
   margin-left: 90px;
   margin-top: 50px;
