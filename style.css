@@ -711,6 +711,16 @@ span {
   .name-div {
     margin-top: -9px;
   }
+
+  .up {
+    width: 300px;
+    height: 190px;
+  }
+
+  .down {
+    width: 300px;
+    height: 190px;
+  }
   /* SECOND SECTION END */
 }
 
