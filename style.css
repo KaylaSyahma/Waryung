@@ -284,23 +284,25 @@ span {
 }
 
 .jajanan-card-wrapper {
-  overflow: hidden; /* Hide scrollbar */
+  overflow: visible; /* Allow overflow to be visible */
+  padding: 0 20px; /* Adjust padding as needed */
 }
 
 .jajanan-card {
   display: flex;
   overflow-x: scroll; /* Allow horizontal scrolling */
+  overflow-y: hidden; /* Hide vertical overflow */
   scroll-behavior: smooth; /* Smooth scrolling */
   gap: 60px; /* Adjust gap between cards if needed */
-}
-
-.desc-jajanan{
-  padding: 3px 22px;
 }
 
 /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
 .jajanan-card::-webkit-scrollbar {
   display: none;
+}
+
+.desc-jajanan{
+  padding: 3px 22px;
 }
 
 .jajanan .h1 {
@@ -318,11 +320,17 @@ span {
   width: 280px;
   border-radius: 20px;
   border: 1px solid #dcdbdb;
-  flex-shrink: 0; /* Prevent cards from shrinking */
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.card-jajanan:hover {
+  transform: scale(1.05);
+  border: 2px solid var(--yellow-text-color);
 }
 
 .card-jajanan-img {
-  width: 280px;
+  width: 279px;
 }
 
 .card-jajanan h3 {
