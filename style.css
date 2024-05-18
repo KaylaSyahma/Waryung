@@ -294,6 +294,10 @@ span {
   gap: 60px; /* Adjust gap between cards if needed */
 }
 
+.desc-jajanan{
+  padding: 3px 22px;
+}
+
 /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
 .jajanan-card::-webkit-scrollbar {
   display: none;
@@ -470,7 +474,6 @@ span {
 
 /* MAP */
 .map-section {
-  background-image: url(assets/map-section/map-bg.jpg);
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -483,17 +486,6 @@ span {
 .map {
   max-width: 00px;
   margin: 0 auto;
-}
-.map-section{
-  /* background-image: url(assets/map-section/map-bg.jpg); */
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-}
-.text-map h4{
-  font-weight: 600;
-  color: black;
 }
 
 /* RESPONSIF */
