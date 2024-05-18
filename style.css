@@ -660,11 +660,21 @@ span {
   }
 
   .card-body h5 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .card-body p {
-    font-size: 13px;
+    font-size: 12px;
+  }
+
+  .up {
+    width: 320px;
+    height: 210px;
+  }
+
+  .down {
+    width: 320px;
+    height: 210px;
   }
   /* CUSTOMER SECTION END */
 }
