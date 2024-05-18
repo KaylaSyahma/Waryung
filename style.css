@@ -294,7 +294,7 @@ span {
   gap: 60px; /* Adjust gap between cards if needed */
 }
 
-.desc-jajanan{
+.desc-jajanan {
   padding: 3px 22px;
 }
 
@@ -489,6 +489,79 @@ span {
 }
 
 /* RESPONSIF */
+@media screen and (max-width: 1200px) {
+  /* SECOND SECTION */
+  #second-section {
+    margin-bottom: 150px;
+  }
+
+  .driver-only {
+    margin-top: 170px;
+    margin-left: -100px;
+    animation-name: move;
+    animation-duration: 5s; /* Animation lasts 5 seconds */
+    width: 40%;
+    height: 40%;
+  }
+
+  @keyframes move {
+    from {
+      transform: translateX(0px);
+    } /* motorbike starts at position 0 */
+    to {
+      transform: translateX(130px);
+    } /* motorbike moves 200px to the right */
+  }
+  /* SECOND SECTION END */
+
+  /* CUSTOMER SECTION */
+  .text-customer {
+    margin-left: 90px;
+    margin-top: 50px;
+  }
+
+  .text-customer p {
+    font-size: 21px;
+  }
+
+  .text-customer h2 {
+    font-size: 23px;
+    width: 370px;
+  }
+
+  .text-customer h6 {
+    font-size: 15px;
+    width: 440px;
+  }
+
+  .card-up {
+    margin-left: -200px;
+    margin-right: 20px;
+  }
+
+  .up {
+    width: 300px;
+    height: 190px;
+  }
+
+  .down {
+    width: 300px;
+    height: 190px;
+  }
+
+  .card-body h5 {
+    font-size: 15px;
+  }
+
+  .card-body p {
+    font-size: 11px;
+  }
+
+  .name-div {
+    margin-top: -9px;
+  }
+  /* CUSTOMER SECTION END */
+}
 
 @media screen and (max-width: 922px) {
   /* SECOND SECTION */
@@ -555,49 +628,202 @@ span {
   /* SECOND SECTION END */
 
   /* CUSTOMER SECTION */
-.customer {
-  background-color: #fff5c3;
-  font-family: poppins;
+  .text-customer {
+    margin-left: 90px;
+    margin-top: 50px;
+  }
+
+  .text-customer p {
+    font-size: 21px;
+  }
+
+  .text-customer h2 {
+    font-size: 25px;
+    width: 470px;
+  }
+
+  .text-customer h6 {
+    font-size: 15px;
+    width: 540px;
+  }
+
+  .button {
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 10px;
+    margin-top: 2rem;
+  }
+
+  .col-lg-3 {
+    margin-left: -110px;
+    margin-top: 90px;
+  }
+
+  .card-body h5 {
+    font-size: 16px;
+  }
+
+  .card-body p {
+    font-size: 12px;
+  }
+
+  .up {
+    width: 320px;
+    height: 210px;
+  }
+
+  .down {
+    width: 320px;
+    height: 210px;
+  }
+  /* CUSTOMER SECTION END */
 }
 
-.text-customer {
-  margin-left: 90px;
-  margin-top: 50px;
+@media screen and (max-width: 768px) {
+  /* SECOND SECTION */
+  #second-section {
+    margin-bottom: 90px;
+  }
+
+  .driver-bg {
+    margin-top: 28px;
+    margin-left: -28px;
+  }
+
+  .driver-only {
+    width: 38%;
+    height: 38%;
+  }
+
+  .text-waryung h2 {
+    font-size: 24px;
+    width: 308px;
+  }
+
+  .card-body h5 {
+    font-size: 15px;
+  }
+
+  .card-body p {
+    font-size: 11px;
+  }
+
+  .name-div {
+    margin-top: -9px;
+  }
+
+  .up {
+    width: 300px;
+    height: 190px;
+  }
+
+  .down {
+    width: 300px;
+    height: 190px;
+  }
+  /* SECOND SECTION END */
 }
 
-.text-customer p {
-  font-size: 21px;
+@media screen and (max-width: 617px) {
+  /* SECOND SECTION */
+  .driver-bg {
+    display: none;
+  }
+
+  .driver-only {
+    display: none;
+  }
+
+  .content {
+    margin-left: 50px;
+  }
+
+  .text-waryung h2 {
+    font-size: 30px;
+    width: 497px;
+  }
+
+  .btn-pesan {
+    margin-left: 50px;
+  }
+  /* SECOND SECTION */
+
+
+  /* CUSTOMER SECTION */
+  .text-customer {
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+
+  .text-customer p {
+    font-size: 19px;
+  }
+
+  .text-customer h2 {
+    width: 470px;
+  }
+
+  .text-customer h6 {
+    font-size: 14px;
+    width: 470px;
+  }
+
+  .col-lg-3 {
+    margin-left: -110px;
+    margin-top: 90px;
+  }
+
+  .card-up {
+    margin-left: -160px;
+    margin-right: 20px;
+  }
+
+  .up {
+    width: 320px;
+    height: 210px;
+  }
+
+  .down {
+    display: none;
+  }
+
+  .card-body h5 {
+    font-size: 18px;
+  }
+
+  .card-body p {
+    font-size: 13px;
+  }
+
+  /* CUSTOMER SECTION END */
 }
 
-.text-customer h2 {
-  font-size: 25px;
-  width: 470px;
-}
+@media screen and (max-width: 450px) {
+   /* SECOND SECTION */
+  .content {
+    margin-left: 50px;
+  }
 
-.text-customer h6 {
-  font-size: 15px;
-  width: 540px;
-}
+  .text-waryung h2 {
+    font-size: 26px;
+    width: 397px;
+  }
+  /* SECOND SECTION */
 
-.button {
-  font-size: 14px;
-  font-weight: 400;
-  border-radius: 10px;
-  margin-top: 2rem;
-}
 
-.col-lg-3 {
-  margin-left: -110px;
-  margin-top: 90px;
-}
+  /* CUSTOMER SECTION */
+  .text-customer p {
+    font-size: 17px;
+  }
 
-.card-body h5 {
-  font-size: 18px;
-}
+  .text-customer h2 {
+    font-size: 22px;
+    width: 350px;
+  }
 
-.card-body p {
-  font-size: 13px;
-}
-/* CUSTOMER SECTION END */
-
+  .text-customer h6 {
+    font-size: 12px;
+    width: 350px;
+  }
+  /* CUSTOMER SECTION END */
 }
