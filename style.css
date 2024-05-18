@@ -827,3 +827,102 @@ span {
   }
   /* CUSTOMER SECTION END */
 }
+
+/* NAVBAR RESPONSIVE */
+@media(max-width: 1200px) {
+  .navbar{
+    width: 20px;
+    overflow-x: hidden;
+  }
+}
+@media(max-width: 911px) {
+  .navbar .logo-img{
+    width: 45px;
+  }
+  .navbar .logo-text{
+    width: 60px;
+  }
+  .nav-item a{
+    font-size: 13px;
+  }
+  .navbar button{
+    width: 75px;
+    height: 33px;
+    font-size: 13px;
+  }
+}
+@media(max-width: 768px) {
+  .navbar .logo-img{
+    width: 35px;
+  }
+  .navbar .logo-text{
+    width: 50px;
+  }
+}
+@media(max-width: 617px) {
+  .nav-item a{
+    font-size: 10px;
+  }
+  .navbar button{
+    width: 60px;
+    height: 25px;
+    font-size: 11px;
+    padding-bottom: 20px;
+  }
+}
+@media(max-width: 450px){
+  .navbar .logo-img{
+    width: 25px;
+  }
+  .navbar .logo-text{
+    width: 40px;
+  }
+  .nav-item a{
+    font-size: 9px;
+  }
+  .navbar button{
+    width: 50px;
+    height: 20px;
+    font-size: 9px;
+    padding-bottom: 18px;
+  }
+
+}
+
+/* HOME RESPONSIVE */
+
+@media (max-width: 911px) {
+  #home {
+    background-size: 100%;
+    overflow-x: hidden;
+  }
+  .home-content{
+    margin-left: 35px;
+  }
+  .home-content img{
+    width: 4.5rem;
+  }
+  .home-text h2{
+    font-size: 23px;
+  }
+  .home-text p{
+    font-size: 15px;
+  }
+  .card{
+    width: 25rem;
+    height: 13rem;
+    margin-bottom: 3rem ;
+  }
+  .input-alamat button{
+    font-size: 15px;
+  }
+  .input-alamat a{
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  #home{
+    background-size: 100%;
+    overflow-x: hidden;
+  }
+}

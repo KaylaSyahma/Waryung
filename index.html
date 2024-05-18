@@ -21,116 +21,81 @@
   <body id="bg-body">
     <!-- NAVBAR -->
     <header>
-      <nav
-        class="navbar navbar-expand-lg navbar-dark nav-color position-fixed w-100"
-      >
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img
-              src="assets/home-section/waryung-logo-nobg.png"
-              alt="waryung-logo"
-              width="40"
-            />
-            <img src="assets/home-section/Waryung.png" alt="" width="80" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+      <nav class="navbar navbar-expand navbar-dark nav-color position-fixed w-100">
+          <div class="container">
+              <a class="navbar-brand" href="#">
+                  <img class="logo-img" src="assets/home-section/waryung-logo-nobg.png" alt="waryung-logo" />
+                  <img class="logo-text" src="assets/home-section/Waryung.png" alt="" width="80" />
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
 
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav nav-underline mx-auto">
-              <li class="nav-item">
-                <a
-                  class="nav-link active text-black"
-                  aria-current="page"
-                  href="#"
-                  >Beranda
-                </a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link text-black" href="#">Rekomendasi</a>
-              </li>
-            </ul>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav nav-underline mx-auto">
+                      <li class="nav-item">
+                          <a class="nav-link active text-black" aria-current="page" href="#">Beranda
+                          </a>
+                      </li>
+                      <li class="nav-item mx-2">
+                          <a class="nav-link text-black" href="#">Rekomendasi</a>
+                      </li>
+                  </ul>
 
-            <div>
-              <button class="btn btn-warning text-white">Daftar</button>
-              <button class="btn btn-warning text-white">Masuk</button>
-            </div>
+                  <div>
+                      <button class="btn btn-warning text-white">Daftar</button>
+                      <button class="btn btn-warning text-white">Masuk</button>
+                  </div>
+              </div>
           </div>
-        </div>
       </nav>
-    </header>
+  </header>
 
-    <!-- HOME PAGE -->
-    <section id="home" class="d-flex align-items-center">
-      <div class="container h-100">
+  <!-- HOME SECTION -->
+  <section id="home" class="d-flex align-items-center">
+    <div class="container h-100">
         <div class="row w-100 h-100 justify-content-center align-items-center">
-          <div class="col-md-8 my-auto">
-            <div class="home-content text-center" style="margin-bottom: 15rem">
-              <div class="logo">
-                <img
-                  src="assets/home-section/waryung-logo.png"
-                  alt=""
-                  width="100"
-                  class="mb-3"
-                />
-              </div>
-              <div class="home-text">
-                <h2>Laper? Hayu jajan di Waryung!</h2>
-                <p>Tinggal klak-klik, bayar, selesai!</p>
-              </div>
-            </div>
-
-            <div class="card-wrapper">
-              <div
-                class="card"
-                style="width: 30rem; left: 50%; transform: translateX(-50%)"
-              >
-                <div class="card-body p-4">
-                  <h5 class="card-title mb-4">Tulis alamatmu</h5>
-
-                  <div class="input-alamat input-group mb-3">
-                    <input
-                      class="form-control"
-                      type="text"
-                      placeholder="Misalnya, Jalan Raya Dayeuh Jonggol"
-                      aria-label="default input example"
-                    />
-                    <button type="button" class="btn btn-warning text-white">
-                      Cari
-                    </button>
-                  </div>
-                  <div class="input-alamat input-group mb-3">
-                    <a
-                      href=""
-                      class="form-control text-decoration-none text-warning"
-                    >
-                      <img
-                        src="assets/home-section/location.svg"
-                        style="
-                          margin-right: 12px;
-                          width: 15px;
-                          margin-bottom: 1px;
-                        "
-                        alt=""
-                      />Atau gunakan lokasi saya saat ini
-                    </a>
-                  </div>
+            <div class="col-md-8 my-auto">
+                <div class="home-content text-center">
+                    <div class="logo">
+                        <img src="assets/home-section/waryung-logo.png" alt="" width="100" class="mb-3" />
+                    </div>
+                    <div class="home-text">
+                        <h2>Laper? Hayu jajan di Waryung!</h2>
+                        <p>Tinggal klak-klik, bayar, selesai!</p>
+                    </div>
                 </div>
-              </div>
+
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <h5 class="card-title mb-4">Tulis alamatmu</h5>
+
+                            <div class="input-alamat input-group mb-3">
+                                <input class="form-control" type="text"
+                                    placeholder="Misalnya, Jalan Raya Dayeuh Jonggol"
+                                    aria-label="default input example" />
+                                <button type="button" class="btn btn-warning text-white">
+                                    Cari
+                                </button>
+                            </div>
+                            <div class="input-alamat input-group mb-3">
+                                <a href="" class="form-control text-decoration-none text-warning">
+                                    <img src="assets/home-section/location.svg" style="
+                      margin-right: 12px;
+                      width: 15px;
+                      margin-bottom: 1px;
+                    " alt="" />Atau gunakan lokasi saya saat ini
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
 
     <!-- SECOND SECTION -->
     <section id="second-section" class="container">
