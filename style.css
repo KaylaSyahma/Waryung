@@ -16,6 +16,7 @@
 /* NAVBAR */
 .navbar {
   background-color: white;
+  box-shadow: 0 0 1rem #dbdbdbe4;
   z-index: 100;
 }
 .navbar .navbar-logo {
@@ -153,23 +154,19 @@
   margin-left: -5px;
 }
 
-#makan .p {
+.judul p {
   color: var(--green-text-color);
   font-size: 25px;
-  font-weight: 600;
-  margin-bottom: 27px;
+  font-weight: 500;
 }
 
-.h2 {
+.judul h2 {
   color: var(--black-text-color);
-  font-size: 28px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
-}
-
-span {
-  color: var(--yellow-text-color);
+  line-height: 1.5;
+  margin-top: -5px;
 }
 
 .desc h3 {
@@ -284,6 +281,27 @@ span {
   padding-top: 5rem;
   height: 100vh;
   overflow: visible;
+  margin-top: 50px;
+  margin-bottom: -50px;
+}
+
+.jajanan h1 {
+  color: var(--black-text-color);
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.jajanan h2 {
+  color: var(--green-text-color);
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: -5px;
+}
+
+.jajanan span {
+  color: var(--yellow-text-color);
 }
 
 .button-group {
