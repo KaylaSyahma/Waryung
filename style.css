@@ -322,14 +322,14 @@ span {
   border-radius: 15px;
   border: 1px solid #dcdbdb;
   cursor: pointer;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   overflow: visible; /* Ensure the content doesn't overflow */
   position: relative; /* Pastikan z-index berfungsi */
   z-index: 1;
 }
 
 .card-jajan {
-  transition: transform .3s ease-in-out; /* Smooth shrinking */
+  transition: transform 0.3s ease-in-out; /* Smooth shrinking */
 }
 
 .card-jajanan:hover {
@@ -341,7 +341,6 @@ span {
 .card-jajanan:hover .card-jajan {
   transform: scale(0.95); /* Scale down smoothly */
 }
-
 
 .card-jajanan img {
   width: 100%; /* Make image width 100% of the card */
@@ -384,11 +383,9 @@ span {
   font-size: 14px;
 }
 
-
 .card-jajanan .bintang {
   font-size: 13px;
 }
-
 
 /* NAVBAR */
 .navbar {
@@ -542,17 +539,24 @@ span {
   line-height: 1.5; /* Menyesuaikan line-height untuk spasi antar baris */
 }
 
-footer{
+footer {
   padding-bottom: 0;
-  background-color: #FFFBDE;
+  background-color: #fffbde;
 }
 
-footer .p{
+footer .p {
   color: #646464;
 }
 
 /* RESPONSIF */
 @media screen and (max-width: 1200px) {
+  /* NAVBAR */
+  .navbar {
+    width: 20px;
+    overflow-x: hidden;
+  }
+  /* NAVBAR END */
+
   /* SECOND SECTION */
   #second-section {
     margin-bottom: 150px;
@@ -626,7 +630,54 @@ footer .p{
   /* CUSTOMER SECTION END */
 }
 
-@media screen and (max-width: 922px) {
+@media screen and (max-width: 911px) {
+  /* NAVBAR */
+  .navbar .logo-img {
+    width: 45px;
+  }
+  .navbar .logo-text {
+    width: 60px;
+  }
+  .nav-item a {
+    font-size: 13px;
+  }
+  .navbar button {
+    width: 75px;
+    height: 33px;
+    font-size: 13px;
+  }
+  /* NAVBAR END */
+
+  /* HOME */
+  #home {
+    background-size: 100%;
+    overflow-x: hidden;
+  }
+  .home-content {
+    margin-left: 35px;
+  }
+  .home-content img {
+    width: 4.5rem;
+  }
+  .home-text h2 {
+    font-size: 23px;
+  }
+  .home-text p {
+    font-size: 15px;
+  }
+  .card {
+    width: 25rem;
+    height: 13rem;
+    margin-bottom: 3rem;
+  }
+  .input-alamat button {
+    font-size: 15px;
+  }
+  .input-alamat a {
+    font-size: 15px;
+  }
+  /* HOME END */
+
   /* SECOND SECTION */
   #second-section {
     margin-bottom: 90px;
@@ -743,6 +794,22 @@ footer .p{
 }
 
 @media screen and (max-width: 768px) {
+  /* NAVBAR */
+  .navbar .logo-img {
+    width: 35px;
+  }
+  .navbar .logo-text {
+    width: 50px;
+  }
+  /* NAVBAR END */
+
+  /* HOME */
+  #home {
+    background-size: 100%;
+    overflow-x: hidden;
+  }
+  /* HOME END */
+
   /* SECOND SECTION */
   #second-section {
     margin-bottom: 90px;
@@ -793,9 +860,50 @@ footer .p{
 .card-jajanan{
   width: 450px;
 }
+  /* SECOND SECTION END */
+
+  /* FOOTER */
+  footer .col-md-3,
+  footer .col-md-2,
+  footer .col-md-4 {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  footer .d-flex {
+    display: block;
+    text-align: center;
+  }
+
+  footer .d-flex img,
+  footer .d-flex p {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hm {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  /* FOOTER END */
 }
 
 @media screen and (max-width: 617px) {
+  /* NAVBAR */
+  .nav-item a {
+    font-size: 10px;
+  }
+
+  .navbar button {
+    width: 60px;
+    height: 25px;
+    font-size: 11px;
+    padding-bottom: 20px;
+  }
+  /* NAVBAR END */
+
   /* SECOND SECTION */
   .driver-bg {
     display: none;
@@ -818,7 +926,6 @@ footer .p{
     margin-left: 50px;
   }
   /* SECOND SECTION */
-
 
   /* CUSTOMER SECTION */
   .text-customer {
@@ -865,7 +972,6 @@ footer .p{
   .card-body p {
     font-size: 13px;
   }
-
   /* CUSTOMER SECTION END */
 
   /* cardsection */
@@ -878,7 +984,25 @@ footer .p{
 }
 
 @media screen and (max-width: 450px) {
-   /* SECOND SECTION */
+  /* NAVBAR */
+  .navbar .logo-img {
+    width: 25px;
+  }
+  .navbar .logo-text {
+    width: 40px;
+  }
+  .nav-item a {
+    font-size: 9px;
+  }
+  .navbar button {
+    width: 50px;
+    height: 20px;
+    font-size: 9px;
+    padding-bottom: 18px;
+  }
+  /* NAVBAR END */
+
+  /* SECOND SECTION */
   .content {
     margin-left: 50px;
   }
@@ -888,7 +1012,6 @@ footer .p{
     width: 397px;
   }
   /* SECOND SECTION */
-
 
   /* CUSTOMER SECTION */
   .text-customer p {
@@ -905,103 +1028,4 @@ footer .p{
     width: 350px;
   }
   /* CUSTOMER SECTION END */
-}
-
-/* NAVBAR RESPONSIVE */
-@media(max-width: 1200px) {
-  .navbar{
-    width: 20px;
-    overflow-x: hidden;
-  }
-}
-@media(max-width: 911px) {
-  .navbar .logo-img{
-    width: 45px;
-  }
-  .navbar .logo-text{
-    width: 60px;
-  }
-  .nav-item a{
-    font-size: 13px;
-  }
-  .navbar button{
-    width: 75px;
-    height: 33px;
-    font-size: 13px;
-  }
-}
-@media(max-width: 768px) {
-  .navbar .logo-img{
-    width: 35px;
-  }
-  .navbar .logo-text{
-    width: 50px;
-  }
-}
-@media(max-width: 617px) {
-  .nav-item a{
-    font-size: 10px;
-  }
-  .navbar button{
-    width: 60px;
-    height: 25px;
-    font-size: 11px;
-    padding-bottom: 20px;
-  }
-}
-@media(max-width: 450px){
-  .navbar .logo-img{
-    width: 25px;
-  }
-  .navbar .logo-text{
-    width: 40px;
-  }
-  .nav-item a{
-    font-size: 9px;
-  }
-  .navbar button{
-    width: 50px;
-    height: 20px;
-    font-size: 9px;
-    padding-bottom: 18px;
-  }
-
-}
-
-/* HOME RESPONSIVE */
-
-@media (max-width: 911px) {
-  #home {
-    background-size: 100%;
-    overflow-x: hidden;
-  }
-  .home-content{
-    margin-left: 35px;
-  }
-  .home-content img{
-    width: 4.5rem;
-  }
-  .home-text h2{
-    font-size: 23px;
-  }
-  .home-text p{
-    font-size: 15px;
-  }
-  .card{
-    width: 25rem;
-    height: 13rem;
-    margin-bottom: 3rem ;
-  }
-  .input-alamat button{
-    font-size: 15px;
-  }
-  .input-alamat a{
-    font-size: 15px;
-  }
-}
-@media (max-width: 768px) {
-  #home{
-    background-size: 100%;
-    overflow-x: hidden;
-  }
 }
