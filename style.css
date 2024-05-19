@@ -845,6 +845,15 @@ footer .p {
     width: 300px;
     height: 190px;
   }
+    
+  /* SECOND SECTION END */
+  .jajanan .h2 {
+    text-align: center;
+}
+
+.card-jajanan{
+  width: 450px;
+}
   /* SECOND SECTION END */
 
   /* FOOTER */
@@ -958,6 +967,14 @@ footer .p {
     font-size: 13px;
   }
   /* CUSTOMER SECTION END */
+
+  /* cardsection */
+  /* .card-jajan{
+    display: flex;
+  }
+  .card-jajanan {
+    width: 78vw;
+} */
 }
 
 @media screen and (max-width: 450px) {
