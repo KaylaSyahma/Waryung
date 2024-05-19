@@ -543,10 +543,88 @@ span {
 }
 
 footer{
-  padding-bottom: 4rem;
+  padding-bottom: 0;
+  background-color: #FFFBDE;
+}
+
+footer .p{
+  color: #646464;
 }
 
 /* RESPONSIF */
+@media screen and (max-width: 1200px) {
+  /* SECOND SECTION */
+  #second-section {
+    margin-bottom: 150px;
+  }
+
+  .driver-only {
+    margin-top: 170px;
+    margin-left: -100px;
+    animation-name: move;
+    animation-duration: 5s; /* Animation lasts 5 seconds */
+    width: 40%;
+    height: 40%;
+  }
+
+  @keyframes move {
+    from {
+      transform: translateX(0px);
+    } /* motorbike starts at position 0 */
+    to {
+      transform: translateX(130px);
+    } /* motorbike moves 200px to the right */
+  }
+  /* SECOND SECTION END */
+
+  /* CUSTOMER SECTION */
+  .text-customer {
+    margin-left: 90px;
+    margin-top: 50px;
+  }
+
+  .text-customer p {
+    font-size: 21px;
+  }
+
+  .text-customer h2 {
+    font-size: 23px;
+    width: 370px;
+  }
+
+  .text-customer h6 {
+    font-size: 15px;
+    width: 440px;
+  }
+
+  .card-up {
+    margin-left: -200px;
+    margin-right: 20px;
+  }
+
+  .up {
+    width: 300px;
+    height: 190px;
+  }
+
+  .down {
+    width: 300px;
+    height: 190px;
+  }
+
+  .card-body h5 {
+    font-size: 15px;
+  }
+
+  .card-body p {
+    font-size: 11px;
+  }
+
+  .name-div {
+    margin-top: -9px;
+  }
+  /* CUSTOMER SECTION END */
+}
 
 @media screen and (max-width: 922px) {
   /* SECOND SECTION */
@@ -613,102 +691,327 @@ footer{
   /* SECOND SECTION END */
 
   /* CUSTOMER SECTION */
-.customer {
-  background-color: #fff5c3;
-  font-family: poppins;
+  .text-customer {
+    margin-left: 90px;
+    margin-top: 50px;
+  }
+
+  .text-customer p {
+    font-size: 21px;
+  }
+
+  .text-customer h2 {
+    font-size: 25px;
+    width: 470px;
+  }
+
+  .text-customer h6 {
+    font-size: 15px;
+    width: 540px;
+  }
+
+  .button {
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 10px;
+    margin-top: 2rem;
+  }
+
+  .col-lg-3 {
+    margin-left: -110px;
+    margin-top: 90px;
+  }
+
+  .card-body h5 {
+    font-size: 16px;
+  }
+
+  .card-body p {
+    font-size: 12px;
+  }
+
+  .up {
+    width: 320px;
+    height: 210px;
+  }
+
+  .down {
+    width: 320px;
+    height: 210px;
+  }
+  /* CUSTOMER SECTION END */
 }
 
-.text-customer {
-  margin-left: 90px;
-  margin-top: 50px;
+@media screen and (max-width: 768px) {
+  /* SECOND SECTION */
+  #second-section {
+    margin-bottom: 90px;
+  }
+
+  .driver-bg {
+    margin-top: 28px;
+    margin-left: -28px;
+  }
+
+  .driver-only {
+    width: 38%;
+    height: 38%;
+  }
+
+  .text-waryung h2 {
+    font-size: 24px;
+    width: 308px;
+  }
+
+  .card-body h5 {
+    font-size: 15px;
+  }
+
+  .card-body p {
+    font-size: 11px;
+  }
+
+  .name-div {
+    margin-top: -9px;
+  }
+
+  .up {
+    width: 300px;
+    height: 190px;
+  }
+
+  .down {
+    width: 300px;
+    height: 190px;
+  }
+
+    
+  /* SECOND SECTION END */
+  footer .col-md-3,
+    footer .col-md-2,
+    footer .col-md-4 {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    footer .d-flex {
+        display: block;
+        text-align: center;
+    }
+
+    footer .d-flex img,
+    footer .d-flex p {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .hm {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
 
-.text-customer p {
-  font-size: 21px;
+@media screen and (max-width: 617px) {
+  /* SECOND SECTION */
+  .driver-bg {
+    display: none;
+  }
+
+  .driver-only {
+    display: none;
+  }
+
+  .content {
+    margin-left: 50px;
+  }
+
+  .text-waryung h2 {
+    font-size: 30px;
+    width: 497px;
+  }
+
+  .btn-pesan {
+    margin-left: 50px;
+  }
+  /* SECOND SECTION */
+
+
+  /* CUSTOMER SECTION */
+  .text-customer {
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+
+  .text-customer p {
+    font-size: 19px;
+  }
+
+  .text-customer h2 {
+    width: 470px;
+  }
+
+  .text-customer h6 {
+    font-size: 14px;
+    width: 470px;
+  }
+
+  .col-lg-3 {
+    margin-left: -110px;
+    margin-top: 90px;
+  }
+
+  .card-up {
+    margin-left: -160px;
+    margin-right: 20px;
+  }
+
+  .up {
+    width: 320px;
+    height: 210px;
+  }
+
+  .down {
+    display: none;
+  }
+
+  .card-body h5 {
+    font-size: 18px;
+  }
+
+  .card-body p {
+    font-size: 13px;
+  }
+
+  /* CUSTOMER SECTION END */
 }
 
-.text-customer h2 {
-  font-size: 25px;
-  width: 470px;
+@media screen and (max-width: 450px) {
+   /* SECOND SECTION */
+  .content {
+    margin-left: 50px;
+  }
+
+  .text-waryung h2 {
+    font-size: 26px;
+    width: 397px;
+  }
+  /* SECOND SECTION */
+
+
+  /* CUSTOMER SECTION */
+  .text-customer p {
+    font-size: 17px;
+  }
+
+  .text-customer h2 {
+    font-size: 22px;
+    width: 350px;
+  }
+
+  .text-customer h6 {
+    font-size: 12px;
+    width: 350px;
+  }
+  /* CUSTOMER SECTION END */
 }
 
-.text-customer h6 {
-  font-size: 15px;
-  width: 540px;
+/* NAVBAR RESPONSIVE */
+@media(max-width: 1200px) {
+  .navbar{
+    width: 20px;
+    overflow-x: hidden;
+  }
+}
+@media(max-width: 911px) {
+  .navbar .logo-img{
+    width: 45px;
+  }
+  .navbar .logo-text{
+    width: 60px;
+  }
+  .nav-item a{
+    font-size: 13px;
+  }
+  .navbar button{
+    width: 75px;
+    height: 33px;
+    font-size: 13px;
+  }
+}
+@media(max-width: 768px) {
+  .navbar .logo-img{
+    width: 35px;
+  }
+  .navbar .logo-text{
+    width: 50px;
+  }
+}
+@media(max-width: 617px) {
+  .nav-item a{
+    font-size: 10px;
+  }
+  .navbar button{
+    width: 60px;
+    height: 25px;
+    font-size: 11px;
+    padding-bottom: 20px;
+  }
+}
+@media(max-width: 450px){
+  .navbar .logo-img{
+    width: 25px;
+  }
+  .navbar .logo-text{
+    width: 40px;
+  }
+  .nav-item a{
+    font-size: 9px;
+  }
+  .navbar button{
+    width: 50px;
+    height: 20px;
+    font-size: 9px;
+    padding-bottom: 18px;
+  }
+
 }
 
-.button {
-  font-size: 14px;
-  font-weight: 400;
-  border-radius: 10px;
-  margin-top: 2rem;
-}
+/* HOME RESPONSIVE */
 
-.col-lg-3 {
-  margin-left: -110px;
-  margin-top: 90px;
+@media (max-width: 911px) {
+  #home {
+    background-size: 100%;
+    overflow-x: hidden;
+  }
+  .home-content{
+    margin-left: 35px;
+  }
+  .home-content img{
+    width: 4.5rem;
+  }
+  .home-text h2{
+    font-size: 23px;
+  }
+  .home-text p{
+    font-size: 15px;
+  }
+  .card{
+    width: 25rem;
+    height: 13rem;
+    margin-bottom: 3rem ;
+  }
+  .input-alamat button{
+    font-size: 15px;
+  }
+  .input-alamat a{
+    font-size: 15px;
+  }
 }
-
-.card-body h5 {
-  font-size: 18px;
-}
-
-.card-body p {
-  font-size: 13px;
-}
-/* CUSTOMER SECTION END */
-
-}
-
 @media (max-width: 768px) {
-  .container {
-    padding: 0;
-  }
-
-  /* Mengatur padding dan margin untuk section .jajanan */
-  .jajanan {
-    padding: 10px; /* Mengurangi padding untuk membuatnya lebih kompak */
-    justify-content: center;
-    text-align: center;
-  }
-
-  .desc-jajanann{
-    margin-bottom: 2rem;
-  }
-
-  .jajanan h2.h2 {
-    margin-bottom: 15px; /* Mengurangi margin bawah heading */
-  }
-
-
-  .jajanan-card {
-    gap: 20px; /* Mengurangi jarak antar kartu */
-  }
-
-  .card-jajanan {
-    width: 480px; /* Membuat kartu lebar penuh pada layar kecil */
-    margin-bottom: 20px; /* Menambahkan margin bawah antar kartu */
-  }
-
-  .card-jajan {
-    padding: 10px; /* Mengurangi padding dalam kartu */
-    display: flex;
-  }
-
-
-  .desc-jajanan h3 {
-    font-size: 1.2rem; /* Menyesuaikan ukuran font */
-  }
-
-  .desc-jajanan p {
-    font-size: 1rem; /* Menyesuaikan ukuran font */
-  }
-
-  .desc-jajanan .d-flex {
-    flex-direction: column; /* Menyusun elemen secara vertikal */
-  }
-
-  .desc-jajanan .d-flex p {
-    margin-bottom: 5px; /* Menambahkan jarak antar elemen deskripsi */
+  #home{
+    background-size: 100%;
+    overflow-x: hidden;
   }
 }
