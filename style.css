@@ -423,7 +423,7 @@ span {
 }
 
 .text-customer h6 {
-  color: var(--grey-text-color);
+  color: #8D8D8D;
   font-size: 14px;
   font-weight: 500;
   white-space: pre-line;
@@ -514,8 +514,15 @@ span {
 
 /* MAP */
 .map-section {
-  height: 80vh;
+  height: 100vh;
+  padding: 2rem 9%;
 }
+
+.map-section h3{
+  color: var(--green-text-color);
+  font-weight: 700;
+}
+
 .text-map h4 {
   font-weight: 600;
   color: black;
