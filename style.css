@@ -784,33 +784,15 @@ footer .p{
     width: 300px;
     height: 190px;
   }
-
     
   /* SECOND SECTION END */
-  footer .col-md-3,
-    footer .col-md-2,
-    footer .col-md-4 {
-        text-align: center;
-        margin: 0 auto;
-    }
+  .jajanan .h2 {
+    text-align: center;
+}
 
-    footer .d-flex {
-        display: block;
-        text-align: center;
-    }
-
-    footer .d-flex img,
-    footer .d-flex p {
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .hm {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
+.card-jajanan{
+  width: 450px;
+}
 }
 
 @media screen and (max-width: 617px) {
@@ -885,6 +867,14 @@ footer .p{
   }
 
   /* CUSTOMER SECTION END */
+
+  /* cardsection */
+  /* .card-jajan{
+    display: flex;
+  }
+  .card-jajanan {
+    width: 78vw;
+} */
 }
 
 @media screen and (max-width: 450px) {
