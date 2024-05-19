@@ -48,13 +48,29 @@ document.addEventListener('DOMContentLoaded', function () {
     const btnRight = document.getElementById('btn-right');
     const btnLeft = document.getElementById('btn-left');
     const cardContainer = document.getElementById('jajanan-card');
-    const scrollDistance = 340; // Jarak yang ingin digulirkan setiap kali tombol diklik
+    let scrollDistance = 340; // Jarak yang ingin digulirkan setiap kali tombol diklik
+
+    // Pengecekan lebar layar saat tombol diklik
+    function checkScreenWidth() {
+        if (window.innerWidth <= 768) {
+            scrollDistance = 500; // Atur jarak scroll untuk layar 768px atau kurang
+        } else {
+            scrollDistance = 340; // Atur jarak scroll untuk layar lebih dari 768px
+        }
+    }
 
     btnRight.addEventListener('click', function () {
+        checkScreenWidth(); // Pengecekan lebar layar sebelum melakukan scroll
         cardContainer.scrollBy({ left: scrollDistance, behavior: 'smooth' });
     });
 
     btnLeft.addEventListener('click', function () {
+        checkScreenWidth(); // Pengecekan lebar layar sebelum melakukan scroll
         cardContainer.scrollBy({ left: -scrollDistance, behavior: 'smooth' });
+    });
+
+    // Pembaruan jarak scroll saat ukuran layar berubah
+    window.addEventListener('resize', function () {
+        checkScreenWidth();
     });
 });

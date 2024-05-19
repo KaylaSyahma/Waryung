@@ -276,6 +276,7 @@ span {
 
 .jajanan {
   height: 100vh;
+  overflow: visible;
 }
 
 .button-group {
@@ -284,15 +285,15 @@ span {
 }
 
 .jajanan-card-wrapper {
-  overflow: visible; /* Allow overflow to be visible */
+  overflow: visible; /* Izinkan overflow terlihat */
   padding: 0 20px; /* Adjust padding as needed */
 }
 
 .jajanan-card {
   display: flex;
-  overflow-x: scroll; /* Allow horizontal scrolling */
-  overflow-y: hidden; /* Hide vertical overflow */
-  scroll-behavior: smooth; /* Smooth scrolling */
+  overflow-x: auto; /* Izinkan scrolling horizontal */
+  overflow-y: visible; /* Pastikan overflow vertikal terlihat */
+  scroll-behavior: smooth; /* Scrolling halus */
   gap: 60px; /* Adjust gap between cards if needed */
 }
 
@@ -301,7 +302,7 @@ span {
   display: none;
 }
 
-.desc-jajanan{
+.desc-jajanan {
   padding: 3px 22px;
 }
 
@@ -318,19 +319,33 @@ span {
 .card-jajanan {
   flex-shrink: 0; /* Prevent cards from shrinking */
   width: 280px;
-  border-radius: 20px;
+  border-radius: 15px;
   border: 1px solid #dcdbdb;
   cursor: pointer;
-  transition: .3s ease;
+  transition: .3s ease-in-out;
+  overflow: visible; /* Ensure the content doesn't overflow */
+  position: relative; /* Pastikan z-index berfungsi */
+  z-index: 1;
+}
+
+.card-jajan {
+  transition: transform .3s ease-in-out; /* Smooth shrinking */
 }
 
 .card-jajanan:hover {
-  transform: scale(1.05);
-  border: 2px solid var(--yellow-text-color);
+  box-shadow: 0px 30px 60px 0px rgba(92, 99, 105, 0.15);
+  border: white;
+  z-index: 10; /* Muncul di depan saat di-hover */
 }
 
-.card-jajanan-img {
-  width: 279px;
+.card-jajanan:hover .card-jajan {
+  transform: scale(0.95); /* Scale down smoothly */
+}
+
+
+.card-jajanan img {
+  width: 100%; /* Make image width 100% of the card */
+  border-radius: 12px; /* Adjust border radius if needed */
 }
 
 .card-jajanan h3 {
@@ -352,6 +367,28 @@ span {
 .card-jajanan .bintang {
   font-size: 13px;
 }
+
+.card-jajanan h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-jajanan p {
+  color: var(--grey-text-color);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.card-jajanan .ijo {
+  color: var(--green-text-color);
+  font-size: 14px;
+}
+
+
+.card-jajanan .bintang {
+  font-size: 13px;
+}
+
 
 /* NAVBAR */
 .navbar {
@@ -496,6 +533,19 @@ span {
   margin: 0 auto;
 }
 
+/* FOOTER */
+.icon {
+  margin-top: 0.25rem; /* Sesuaikan nilai margin top agar ikon sejajar dengan baris pertama teks */
+}
+
+.address-text {
+  line-height: 1.5; /* Menyesuaikan line-height untuk spasi antar baris */
+}
+
+footer{
+  padding-bottom: 4rem;
+}
+
 /* RESPONSIF */
 
 @media screen and (max-width: 922px) {
@@ -608,4 +658,57 @@ span {
 }
 /* CUSTOMER SECTION END */
 
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+
+  /* Mengatur padding dan margin untuk section .jajanan */
+  .jajanan {
+    padding: 10px; /* Mengurangi padding untuk membuatnya lebih kompak */
+    justify-content: center;
+    text-align: center;
+  }
+
+  .desc-jajanann{
+    margin-bottom: 2rem;
+  }
+
+  .jajanan h2.h2 {
+    margin-bottom: 15px; /* Mengurangi margin bawah heading */
+  }
+
+
+  .jajanan-card {
+    gap: 20px; /* Mengurangi jarak antar kartu */
+  }
+
+  .card-jajanan {
+    width: 480px; /* Membuat kartu lebar penuh pada layar kecil */
+    margin-bottom: 20px; /* Menambahkan margin bawah antar kartu */
+  }
+
+  .card-jajan {
+    padding: 10px; /* Mengurangi padding dalam kartu */
+    display: flex;
+  }
+
+
+  .desc-jajanan h3 {
+    font-size: 1.2rem; /* Menyesuaikan ukuran font */
+  }
+
+  .desc-jajanan p {
+    font-size: 1rem; /* Menyesuaikan ukuran font */
+  }
+
+  .desc-jajanan .d-flex {
+    flex-direction: column; /* Menyusun elemen secara vertikal */
+  }
+
+  .desc-jajanan .d-flex p {
+    margin-bottom: 5px; /* Menambahkan jarak antar elemen deskripsi */
+  }
 }
