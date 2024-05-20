@@ -71,7 +71,7 @@ section {
   margin-top: 140px;
   margin-left: -70px;
   animation-name: move;
-  animation-duration: 3s; /* Animation lasts 5 seconds */
+  animation-duration: 5s; /* Animation lasts 5 seconds */
   animation-iteration-count: 1; /* Animation repeats  */
   animation-fill-mode: forwards;
 }
