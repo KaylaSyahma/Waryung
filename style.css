@@ -594,6 +594,12 @@ footer .p {
   }
   /* NAVBAR END */
 
+  /* HOME SECTION */
+.home-content {
+  bottom: 50%;
+}
+  /* HOME SECTION END */
+
   /* SECOND SECTION */
   #second-section {
     margin-bottom: 150px;
@@ -864,24 +870,25 @@ footer .p {
 
   /* HOME */
   #home {
+    background-image: url(assets/map-section/map-bg.jpg);
     background-size: 100%;
+    position: relative;
   }
   .home-content{
-    margin-bottom: 27rem;
+    margin-top: 5rem;
   }
   .home-content img{
-    width: 4rem;
+    width: 5rem;
   }
   .home-content h2{
-    font-size: 20px;
+    font-size: 25px;
   }
   .home-content p{
-    font-size: 13px;
+    font-size: 15px;
   }
   .card {
     width: 22rem;
     height: 10rem;
-    margin-bottom: 12rem;
   }
   .card .card-body h5{
     font-size: 13px;
@@ -1166,19 +1173,41 @@ footer .p {
 
   /* HOME SECTION */
   #home {
-    background-size: 100%;
+    background-image: url(assets/map-section/map-bg.jpg);
+    background-size: cover;
+    margin: auto;
   }
   .home-content{
-    margin-bottom: 32rem;
+  margin-top: 5rem;
   }
   .home-content img{
-    width: 2.5rem;
+    width: 5rem;
   }
   .home-content h2{
-    font-size: 11px;
+    font-size: 20px;
   }
   .home-content p{
-    font-size: 8px;
+    font-size: 10px;
+  }
+  .card {
+    width: 23rem;
+    height: 10rem;
+    margin-bottom: 5rem;
+  }
+  .card .card-body h5{
+    font-size: 13px;
+  }
+  .input-alamat ::placeholder{
+    font-size: 11.5px;
+  }
+  .input-alamat button {
+    font-size: 13px;
+  }
+  .input-alamat a img {
+    width: 12px;
+  }
+  .input-alamat a{
+    font-size: 11.5px;
   }
   /* HOME SECTION END */
 
