@@ -13,7 +13,7 @@
   --grey-text-color: #b3b4bb;
 }
 
-section{
+section {
   height: 100vh;
 }
 
@@ -445,7 +445,7 @@ section{
 }
 
 .text-customer h6 {
-  color: #8D8D8D;
+  color: #8d8d8d;
   font-size: 14px;
   font-weight: 500;
   white-space: pre-line;
@@ -540,7 +540,7 @@ section{
   padding: 2rem 9%;
 }
 
-.map-section h3{
+.map-section h3 {
   color: var(--green-text-color);
   font-weight: 700;
 }
@@ -556,7 +556,7 @@ section{
 }
 
 /* slogan */
-#slogan{
+#slogan {
   height: 80vh;
 }
 
@@ -823,23 +823,22 @@ footer .p {
   /* CUSTOMER SECTION END */
 
   /* JAJANAN */
-  .jajanan{
+  .jajanan {
     height: 100vh;
     margin-bottom: 5rem;
   }
 
   /* Slogan Section */
-  #slogan{
+  #slogan {
     height: 60vh;
     padding: 2rem 9%;
   }
-  #slogan-img{
+  #slogan-img {
     content: url(assets/card-section/small.svg);
   }
 }
 
 @media screen and (max-width: 768px) {
-  
   /* NAVBAR */
   .navbar .logo-img {
     width: 35px;
@@ -858,7 +857,7 @@ footer .p {
 
   /* SECOND SECTION */
   #second-section {
-    margin-bottom: 90px;
+    margin-bottom: -250px;
   }
 
   .driver-bg {
@@ -875,7 +874,9 @@ footer .p {
     font-size: 24px;
     width: 308px;
   }
+  /* SECOND SECTION END */
 
+  /* CUSTOMER SECTION */
   .card-body h5 {
     font-size: 15px;
   }
@@ -897,29 +898,30 @@ footer .p {
     width: 300px;
     height: 190px;
   }
-    
-  /* SECOND SECTION END */
-  .jajanan{
+  /* CUSTOMER SECTION */
+
+  /* SECTION JAJAN */
+  .jajanan {
     padding: 2rem 13.5%;
+    margin-bottom: -50px;
   }
   .jajanan h2 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 10px;
-}
-.jajanan .h1{
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
+  }
+  .jajanan .h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
 
-.card-jajanan{
-  width: 30vw;
-}
- 
-.btn{
-  padding: auto;
-}
+  .card-jajanan {
+    width: 30vw;
+  }
 
-  /* SECOND SECTION END */
+  .btn {
+    padding: auto;
+  }
+  /* SECTION JAJAN END */
 
   /* FOOTER */
   footer .col-md-3,
@@ -940,8 +942,6 @@ footer .p {
     margin: 0 auto;
     text-align: left;
   }
-
-
   /* FOOTER END */
 }
 
@@ -983,18 +983,18 @@ footer .p {
   /* SECOND SECTION */
 
   /* MAKAN */
-  .card-makanan{
+  .card-makanan {
     width: 300px;
   }
-  .pengecualian .food-img img{
+  .pengecualian .food-img img {
     height: 10rem;
   }
 
-  .food-img img{
+  .food-img img {
     width: 70px;
   }
-  
-  .desc h3{
+
+  .desc h3 {
     font-size: 15px;
   }
 
@@ -1026,7 +1026,7 @@ footer .p {
     margin-left: -160px;
     margin-right: 20px;
   }
-
+  
   .up {
     width: 320px;
     height: 210px;
@@ -1046,11 +1046,9 @@ footer .p {
   /* CUSTOMER SECTION END */
 
   /* cardsection */
-  .card-jajanan{
+  .card-jajanan {
     width: 65vw;
   }
-
-  
 }
 
 @media screen and (max-width: 450px) {
