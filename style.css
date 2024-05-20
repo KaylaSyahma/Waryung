@@ -919,28 +919,6 @@ footer .p {
   padding: auto;
 }
 
-  /* SECOND SECTION END */
-
-  /* FOOTER */
-  footer .col-md-3,
-  footer .col-md-2,
-  footer .col-md-4 {
-    text-align: left;
-    margin: 0 auto;
-  }
-
-  footer .d-flex {
-    display: block;
-    text-align: left;
-  }
-
-  footer .d-flex img,
-  footer .d-flex p {
-    display: block;
-    margin: 0 auto;
-    text-align: left;
-  }
-
 
   /* FOOTER END */
 }
@@ -983,6 +961,13 @@ footer .p {
   /* SECOND SECTION */
 
   /* MAKAN */
+  .judul p{
+    font-size: 20px;
+  }
+
+  .judul h2{
+    font-size: 25px;
+  }
   .card-makanan{
     width: 300px;
   }
