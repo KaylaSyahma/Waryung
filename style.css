@@ -36,6 +36,12 @@ section{
   height: 100vh;
   background-repeat: no-repeat;
 }
+.home-content img{
+  width: 8rem;
+}
+.home-content{
+  margin-bottom: 15rem;
+}
 .home-text h2 {
   color: var(--text-color);
   font-weight: 600;
@@ -47,9 +53,10 @@ section{
   font-weight: 500;
 }
 .card {
-  width: 30rem;
+  width: 35rem;
+  height: 14rem;
   box-shadow: 0px 12px 8px rgba(0, 0, 0, 0.1);
-  left: 50%;
+  left: 100%;
   transform: translateX(-100%);
 }
 
@@ -671,7 +678,7 @@ footer .p {
   .nav-item a {
     font-size: 13px;
   }
-  .navbar button {
+  .tombol button {
     width: 75px;
     height: 33px;
     font-size: 13px;
@@ -685,6 +692,7 @@ footer .p {
   }
   .home-content {
     margin-left: 35px;
+    margin-bottom: 25rem;
   }
   .home-content img {
     width: 4.5rem;
@@ -696,15 +704,21 @@ footer .p {
     font-size: 15px;
   }
   .card {
-    width: 25rem;
+    width: 24rem;
     height: 13rem;
-    margin-bottom: 3rem;
+    margin-bottom: 7rem;
+  }
+  .card .card-body h5{
+    font-size: 15px;
+  }
+  .input-alamat ::placeholder{
+    font-size: 13px;
   }
   .input-alamat button {
     font-size: 15px;
   }
   .input-alamat a {
-    font-size: 15px;
+    font-size: 13px;
   }
   /* HOME END */
 
@@ -852,8 +866,40 @@ footer .p {
   /* HOME */
   #home {
     background-size: 100%;
-    overflow-x: hidden;
   }
+  .home-content{
+    margin-bottom: 27rem;
+  }
+  .home-content img{
+    width: 4rem;
+  }
+  .home-content h2{
+    font-size: 20px;
+  }
+  .home-content p{
+    font-size: 13px;
+  }
+  .card {
+    width: 22rem;
+    height: 10rem;
+    margin-bottom: 12rem;
+  }
+  .card .card-body h5{
+    font-size: 13px;
+  }
+  .input-alamat ::placeholder{
+    font-size: 11.5px;
+  }
+  .input-alamat button {
+    font-size: 13px;
+  }
+  .input-alamat a img {
+    width: 12px;
+  }
+  .input-alamat a{
+    font-size: 11.5px;
+  }
+
   /* HOME END */
 
   /* SECOND SECTION */
@@ -958,6 +1004,47 @@ footer .p {
     padding-bottom: 20px;
   }
   /* NAVBAR END */
+
+  /* HOME SECTION */
+  #home {
+    background-size: 100%;
+  }
+  .home-content{
+    margin-bottom: 30rem;
+  }
+  .home-content img{
+    width: 3rem;
+  }
+  .home-content h2{
+    font-size: 16px;
+  }
+  .home-content p{
+    font-size: 10px;
+  }
+  .card {
+    width: 20rem;
+    height: 9rem;
+    margin-bottom: 16rem;
+  }
+  .card .card-body h5{
+    font-size: 10px;
+  }
+  .input-alamat{
+    height: 30px;
+  }
+  .input-alamat ::placeholder{
+    font-size: 10px;
+  }
+  .input-alamat button {
+    font-size: 10px;
+  }
+  .input-alamat a img {
+    width: 10px;
+  }
+  .input-alamat a{
+    font-size: 10px;
+  }
+  /* HOME SECTION END */
 
   /* SECOND SECTION */
   .driver-bg {
@@ -1071,6 +1158,24 @@ footer .p {
     padding-bottom: 18px;
   }
   /* NAVBAR END */
+
+  /* HOME SECTION */
+  #home {
+    background-size: 100%;
+  }
+  .home-content{
+    margin-bottom: 32rem;
+  }
+  .home-content img{
+    width: 2.5rem;
+  }
+  .home-content h2{
+    font-size: 11px;
+  }
+  .home-content p{
+    font-size: 8px;
+  }
+  /* HOME SECTION END */
 
   /* SECOND SECTION */
   .content {
