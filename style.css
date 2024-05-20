@@ -36,10 +36,10 @@ section {
   height: 100vh;
   background-repeat: no-repeat;
 }
-.home-content img{
+.home-content img {
   width: 8rem;
 }
-.home-content{
+.home-content {
   margin-bottom: 15rem;
 }
 .home-text h2 {
@@ -718,10 +718,10 @@ footer .p {
     height: 13rem;
     margin-bottom: 7rem;
   }
-  .card .card-body h5{
+  .card .card-body h5 {
     font-size: 15px;
   }
-  .input-alamat ::placeholder{
+  .input-alamat ::placeholder {
     font-size: 13px;
   }
   .input-alamat button {
@@ -878,26 +878,26 @@ footer .p {
     background-size: 100%;
     position: relative;
   }
-  .home-content{
-    margin-top: 5rem;
+  .home-content {
+    margin-bottom: 27rem;
   }
-  .home-content img{
-    width: 5rem;
+  .home-content img {
+    width: 4rem;
   }
-  .home-content h2{
-    font-size: 25px;
+  .home-content h2 {
+    font-size: 20px;
   }
-  .home-content p{
-    font-size: 15px;
+  .home-content p {
+    font-size: 13px;
   }
   .card {
     width: 22rem;
     height: 10rem;
   }
-  .card .card-body h5{
+  .card .card-body h5 {
     font-size: 13px;
   }
-  .input-alamat ::placeholder{
+  .input-alamat ::placeholder {
     font-size: 11.5px;
   }
   .input-alamat button {
@@ -906,7 +906,7 @@ footer .p {
   .input-alamat a img {
     width: 12px;
   }
-  .input-alamat a{
+  .input-alamat a {
     font-size: 11.5px;
   }
 
@@ -934,26 +934,15 @@ footer .p {
   /* SECOND SECTION END */
 
   /* CUSTOMER SECTION */
-  .card-body h5 {
-    font-size: 15px;
+  .customer {
+    height: fit-content;
   }
-
-  .card-body p {
-    font-size: 11px;
-  }
-
-  .name-div {
-    margin-top: -9px;
-  }
-
   .up {
-    width: 300px;
-    height: 190px;
+    display: none;
   }
 
   .down {
-    width: 300px;
-    height: 190px;
+    display: none;
   }
   /* CUSTOMER SECTION */
 
@@ -981,24 +970,7 @@ footer .p {
   /* SECTION JAJAN END */
 
   /* FOOTER */
-  footer .col-md-3,
-  footer .col-md-2,
-  footer .col-md-4 {
-    text-align: left;
-    margin: 0 auto;
-  }
 
-  footer .d-flex {
-    display: block;
-    text-align: left;
-  }
-
-  footer .d-flex img,
-  footer .d-flex p {
-    display: block;
-    margin: 0 auto;
-    text-align: left;
-  }
   /* FOOTER END */
 }
 
@@ -1023,17 +995,17 @@ footer .p {
   #home {
     background-size: 100%;
   }
-  .home-content{
-    margin-bottom: 35rem;
+  .home-content {
+    margin-bottom: 30rem;
   }
-  .home-content img{
-    width: 4rem;
+  .home-content img {
+    width: 3rem;
   }
-  .home-content h2{
+  .home-content h2 {
     font-size: 16px;
     margin-top: 8px;
   }
-  .home-content p{
+  .home-content p {
     font-size: 10px;
   }
   .card {
@@ -1041,13 +1013,13 @@ footer .p {
     height: 9rem;
     margin-bottom: 5rem;
   }
-  .card .card-body h5{
+  .card .card-body h5 {
     font-size: 10px;
   }
-  .input-alamat{
+  .input-alamat {
     height: 30px;
   }
-  .input-alamat ::placeholder{
+  .input-alamat ::placeholder {
     font-size: 10px;
   }
   .input-alamat button {
@@ -1056,7 +1028,7 @@ footer .p {
   .input-alamat a img {
     width: 10px;
   }
-  .input-alamat a{
+  .input-alamat a {
     font-size: 10px;
   }
   /* HOME SECTION END */
@@ -1085,14 +1057,14 @@ footer .p {
   /* SECOND SECTION */
 
   /* MAKAN */
-  .judul p{
+  .judul p {
     font-size: 20px;
   }
 
-  .judul h2{
+  .judul h2 {
     font-size: 25px;
   }
-  .card-makanan{
+  .card-makanan {
     width: 300px;
   }
   .pengecualian .food-img img {
@@ -1185,37 +1157,17 @@ footer .p {
     background-size: cover;
     margin: auto;
   }
-  .home-content{
-  margin-top: 5rem;
+  .home-content {
+    margin-bottom: 32rem;
   }
-  .home-content img{
-    width: 5rem;
+  .home-content img {
+    width: 2.5rem;
   }
-  .home-content h2{
-    font-size: 20px;
+  .home-content h2 {
+    font-size: 11px;
   }
-  .home-content p{
-    font-size: 10px;
-  }
-  .card {
-    width: 23rem;
-    height: 10rem;
-    margin-bottom: 5rem;
-  }
-  .card .card-body h5{
-    font-size: 13px;
-  }
-  .input-alamat ::placeholder{
-    font-size: 11.5px;
-  }
-  .input-alamat button {
-    font-size: 13px;
-  }
-  .input-alamat a img {
-    width: 12px;
-  }
-  .input-alamat a{
-    font-size: 11.5px;
+  .home-content p {
+    font-size: 8px;
   }
   /* HOME SECTION END */
 
