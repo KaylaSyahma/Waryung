@@ -13,6 +13,10 @@
   --grey-text-color: #b3b4bb;
 }
 
+section{
+  height: 100vh;
+}
+
 /* NAVBAR */
 .navbar {
   background-color: white;
@@ -278,7 +282,7 @@
 }
 
 .jajanan {
-  padding-top: 5rem;
+  padding: 3rem 5%;
   height: 100vh;
   overflow: visible;
   margin-top: 50px;
@@ -359,7 +363,7 @@
 }
 
 .card-jajanan:hover {
-  box-shadow: 0px 30px 60px 0px rgba(92, 99, 105, 0.15);
+  /* box-shadow: 0px 30px 60px 0px rgba(92, 99, 105, 0.15); */
   border: white;
   z-index: 10; /* Muncul di depan saat di-hover */
 }
@@ -549,6 +553,11 @@
 .map {
   max-width: 00px;
   margin: 0 auto;
+}
+
+/* slogan */
+#slogan{
+  height: 80vh;
 }
 
 /* FOOTER */
@@ -812,9 +821,25 @@ footer .p {
     height: 210px;
   }
   /* CUSTOMER SECTION END */
+
+  /* JAJANAN */
+  .jajanan{
+    height: 100vh;
+    margin-bottom: 5rem;
+  }
+
+  /* Slogan Section */
+  #slogan{
+    height: 60vh;
+    padding: 2rem 9%;
+  }
+  #slogan-img{
+    content: url(assets/card-section/small.svg);
+  }
 }
 
 @media screen and (max-width: 768px) {
+  
   /* NAVBAR */
   .navbar .logo-img {
     width: 35px;
@@ -874,40 +899,49 @@ footer .p {
   }
     
   /* SECOND SECTION END */
-  .jajanan .h2 {
-    text-align: center;
+  .jajanan{
+    padding: 2rem 13.5%;
+  }
+  .jajanan h2 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.jajanan .h1{
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .card-jajanan{
-  width: 450px;
+  width: 30vw;
 }
+ 
+.btn{
+  padding: auto;
+}
+
   /* SECOND SECTION END */
 
   /* FOOTER */
   footer .col-md-3,
   footer .col-md-2,
   footer .col-md-4 {
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
   }
 
   footer .d-flex {
     display: block;
-    text-align: center;
+    text-align: left;
   }
 
   footer .d-flex img,
   footer .d-flex p {
     display: block;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
   }
 
-  .hm {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+
   /* FOOTER END */
 }
 
@@ -947,6 +981,22 @@ footer .p {
     margin-left: 50px;
   }
   /* SECOND SECTION */
+
+  /* MAKAN */
+  .card-makanan{
+    width: 300px;
+  }
+  .pengecualian .food-img img{
+    height: 10rem;
+  }
+
+  .food-img img{
+    width: 70px;
+  }
+  
+  .desc h3{
+    font-size: 15px;
+  }
 
   /* CUSTOMER SECTION */
   .text-customer {
@@ -996,12 +1046,11 @@ footer .p {
   /* CUSTOMER SECTION END */
 
   /* cardsection */
-  /* .card-jajan{
-    display: flex;
+  .card-jajanan{
+    width: 65vw;
   }
-  .card-jajanan {
-    width: 78vw;
-} */
+
+  
 }
 
 @media screen and (max-width: 450px) {

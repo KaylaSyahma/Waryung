@@ -53,9 +53,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // Pengecekan lebar layar saat tombol diklik
     function checkScreenWidth() {
         if (window.innerWidth <= 617) {
-            scrollDistance = 500; // Atur jarak scroll untuk layar 617px atau kurang
+            scrollDistance = 458; // Atur jarak scroll untuk layar 617px atau kurang
         } else if (window.innerWidth <= 768) {
-            scrollDistance = 500; // Atur jarak scroll untuk layar 768px atau kurang
+            scrollDistance = 580; // Atur jarak scroll untuk layar 768px atau kurang
         } else {
             scrollDistance = 340; // Atur jarak scroll untuk layar lebih dari 768px
         }
