@@ -78,7 +78,7 @@ section {
   margin-top: 140px;
   margin-left: -70px;
   animation-name: move;
-  animation-duration: 3s; /* Animation lasts 5 seconds */
+  animation-duration: 5s; /* Animation lasts 5 seconds */
   animation-iteration-count: 1; /* Animation repeats  */
   animation-fill-mode: forwards;
 }
@@ -505,6 +505,10 @@ section {
   }
 }
 
+.card-up {
+  margin-left: -160px;
+}
+
 .card-body {
   padding: 20px 30px 20px 30px;
 }
@@ -645,7 +649,7 @@ footer .p {
   }
 
   .card-up {
-    margin-left: -200px;
+    margin-left: -100px;
     margin-right: 20px;
   }
 
@@ -1010,6 +1014,9 @@ footer .p {
     font-size: 11px;
     padding-bottom: 20px;
   }
+  .header{
+    height: fit-content;
+  }
   /* NAVBAR END */
 
   /* HOME SECTION */
@@ -1017,13 +1024,14 @@ footer .p {
     background-size: 100%;
   }
   .home-content{
-    margin-bottom: 30rem;
+    margin-bottom: 35rem;
   }
   .home-content img{
-    width: 3rem;
+    width: 4rem;
   }
   .home-content h2{
     font-size: 16px;
+    margin-top: 8px;
   }
   .home-content p{
     font-size: 10px;
@@ -1031,7 +1039,7 @@ footer .p {
   .card {
     width: 20rem;
     height: 9rem;
-    margin-bottom: 16rem;
+    margin-bottom: 5rem;
   }
   .card .card-body h5{
     font-size: 10px;
@@ -1124,7 +1132,7 @@ footer .p {
   }
 
   .card-up {
-    margin-left: -160px;
+    margin-left: -480px;
     margin-right: 20px;
   }
 
@@ -1235,6 +1243,10 @@ footer .p {
   .text-customer h6 {
     font-size: 12px;
     width: 350px;
+  }
+
+  .card-up {
+    margin-left: -380px;
   }
   /* CUSTOMER SECTION END */
 }
