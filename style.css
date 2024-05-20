@@ -598,6 +598,12 @@ footer .p {
   }
   /* NAVBAR END */
 
+  /* HOME SECTION */
+.home-content {
+  bottom: 50%;
+}
+  /* HOME SECTION END */
+
   /* SECOND SECTION */
   #second-section {
     margin-bottom: 150px;
@@ -868,7 +874,9 @@ footer .p {
 
   /* HOME */
   #home {
+    background-image: url(assets/map-section/map-bg.jpg);
     background-size: 100%;
+    position: relative;
   }
   .home-content {
     margin-bottom: 27rem;
@@ -885,7 +893,6 @@ footer .p {
   .card {
     width: 22rem;
     height: 10rem;
-    margin-bottom: 12rem;
   }
   .card .card-body h5 {
     font-size: 13px;
@@ -979,6 +986,9 @@ footer .p {
     font-size: 11px;
     padding-bottom: 20px;
   }
+  .header{
+    height: fit-content;
+  }
   /* NAVBAR END */
 
   /* HOME SECTION */
@@ -993,6 +1003,7 @@ footer .p {
   }
   .home-content h2 {
     font-size: 16px;
+    margin-top: 8px;
   }
   .home-content p {
     font-size: 10px;
@@ -1000,7 +1011,7 @@ footer .p {
   .card {
     width: 20rem;
     height: 9rem;
-    margin-bottom: 16rem;
+    margin-bottom: 5rem;
   }
   .card .card-body h5 {
     font-size: 10px;
@@ -1142,7 +1153,9 @@ footer .p {
 
   /* HOME SECTION */
   #home {
-    background-size: 100%;
+    background-image: url(assets/map-section/map-bg.jpg);
+    background-size: cover;
+    margin: auto;
   }
   .home-content {
     margin-bottom: 32rem;
