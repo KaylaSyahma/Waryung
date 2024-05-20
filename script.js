@@ -48,31 +48,39 @@ document.addEventListener('DOMContentLoaded', function () {
     const btnRight = document.getElementById('btn-right');
     const btnLeft = document.getElementById('btn-left');
     const cardContainer = document.getElementById('jajanan-card');
-    let scrollDistance = 340; // Jarak yang ingin digulirkan setiap kali tombol diklik
+    let scrollDistance = 340; // Default scroll distance
 
-    // Pengecekan lebar layar saat tombol diklik
+    // Function to set the scroll distance based on screen width
     function checkScreenWidth() {
-        if (window.innerWidth <= 617) {
-            scrollDistance = 458; // Atur jarak scroll untuk layar 617px atau kurang
+        if (window.innerWidth <= 450) {
+            scrollDistance = 20; // Adjust scroll distance for screens 450px or less
+        } else if (window.innerWidth <= 617) {
+            scrollDistance = 458; // Adjust scroll distance for screens 451px to 617px
         } else if (window.innerWidth <= 768) {
-            scrollDistance = 580; // Atur jarak scroll untuk layar 768px atau kurang
+            scrollDistance = 580; // Adjust scroll distance for screens 618px to 768px
         } else {
-            scrollDistance = 340; // Atur jarak scroll untuk layar lebih dari 768px
+            scrollDistance = 340; // Default scroll distance for screens larger than 768px
         }
     }
 
+    // Initial check of screen width
+    checkScreenWidth();
+
+    // Add click event listeners to buttons
     btnRight.addEventListener('click', function () {
-        checkScreenWidth(); // Pengecekan lebar layar sebelum melakukan scroll
+        checkScreenWidth(); // Re-check screen width before scrolling
         cardContainer.scrollBy({ left: scrollDistance, behavior: 'smooth' });
     });
 
     btnLeft.addEventListener('click', function () {
-        checkScreenWidth(); // Pengecekan lebar layar sebelum melakukan scroll
+        checkScreenWidth(); // Re-check screen width before scrolling
         cardContainer.scrollBy({ left: -scrollDistance, behavior: 'smooth' });
     });
 
-    // Pembaruan jarak scroll saat ukuran layar berubah
+    // Update scroll distance when the window is resized
     window.addEventListener('resize', function () {
         checkScreenWidth();
     });
 });
+
+
