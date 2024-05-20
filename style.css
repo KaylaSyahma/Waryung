@@ -505,6 +505,10 @@ section {
   }
 }
 
+.card-up {
+  margin-left: -160px;
+}
+
 .card-body {
   padding: 20px 30px 20px 30px;
 }
@@ -639,7 +643,7 @@ footer .p {
   }
 
   .card-up {
-    margin-left: -200px;
+    margin-left: -100px;
     margin-right: 20px;
   }
 
@@ -1117,7 +1121,7 @@ footer .p {
   }
 
   .card-up {
-    margin-left: -160px;
+    margin-left: -480px;
     margin-right: 20px;
   }
 
@@ -1206,6 +1210,10 @@ footer .p {
   .text-customer h6 {
     font-size: 12px;
     width: 350px;
+  }
+
+  .card-up {
+    margin-left: -380px;
   }
   /* CUSTOMER SECTION END */
 }
